@@ -3,10 +3,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Bien.Core.Models
 {
-    public class Department
+    public class Department : EntityBase
     {
-        public int Id { get; set; }
-
         [StringLength(500)]
         public string Name { get; set; }
 

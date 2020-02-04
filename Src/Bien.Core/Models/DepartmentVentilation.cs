@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Bien.Core.Models
 {
-    public class DepartmentVentilation
+    public class DepartmentVentilation : EntityBase
     {
         [Required, StringLength(500)]
         public string Unit { get; set; }

@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bien.WebApp", "Src\Bien.Web
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bien.DataAcess", "Src\Bien.DataAcess\Bien.DataAcess.csproj", "{75782CCD-EBE6-4AD0-BAF1-B7D6816C0FD1}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Bien.Database", "Src\Bien.Database\Bien.Database.sqlproj", "{53595F7A-ACEA-439E-992B-7415616451B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,12 @@ Global
 		{75782CCD-EBE6-4AD0-BAF1-B7D6816C0FD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75782CCD-EBE6-4AD0-BAF1-B7D6816C0FD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75782CCD-EBE6-4AD0-BAF1-B7D6816C0FD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53595F7A-ACEA-439E-992B-7415616451B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53595F7A-ACEA-439E-992B-7415616451B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53595F7A-ACEA-439E-992B-7415616451B2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{53595F7A-ACEA-439E-992B-7415616451B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53595F7A-ACEA-439E-992B-7415616451B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53595F7A-ACEA-439E-992B-7415616451B2}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,6 +45,7 @@ Global
 		{6E733BE6-95E8-431A-9F5F-ED1D3D24621A} = {D981EA41-8CDA-4C4C-904A-6E8BDDCA3E9E}
 		{895DAA18-2981-4761-A86B-654C6066759C} = {D981EA41-8CDA-4C4C-904A-6E8BDDCA3E9E}
 		{75782CCD-EBE6-4AD0-BAF1-B7D6816C0FD1} = {D981EA41-8CDA-4C4C-904A-6E8BDDCA3E9E}
+		{53595F7A-ACEA-439E-992B-7415616451B2} = {D981EA41-8CDA-4C4C-904A-6E8BDDCA3E9E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D726D5FA-36C4-4111-AE1C-1E9675BCC93D}
