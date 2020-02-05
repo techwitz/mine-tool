@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Content Remove="wwwroot\js\http\HttpFetchService.ts" />
+    <Content Remove="wwwroot\typings\knockout\knockout.mapping.d.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -39,6 +40,7 @@
     <TypeScriptCompile Include="wwwroot\js\http\HomePageService.ts" />
     <TypeScriptCompile Include="wwwroot\js\http\HttpFetchService.ts" />
     <TypeScriptCompile Include="wwwroot\js\Index.ts" />
+    <TypeScriptCompile Include="wwwroot\typings\knockout\knockout.mapping.d.ts" />
   </ItemGroup>
 
   <ItemGroup>

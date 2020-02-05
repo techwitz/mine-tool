@@ -9,19 +9,18 @@ using System.Linq;
 
 namespace Bien.DataAcess.Stores
 {
-    public class DbDepartmentStore : DbStoreBase<Department> , IDepartmentStore
+    public class DbDepartmentStore : DbStoreBase<Department>, IDepartmentStore
     {
         private const string TableName = "[dbo].[Department]";
 
         public DbDepartmentStore(IDbFactory factory)
             : base(factory)
         {
-
         }
 
         public async Task<IList<Department>> GetAllAsync()
         {
-            var sql = $@"SELECT * FROM {TableName} ORDER BY Name";
+            var sql = $@"SELECT [Uid], [EntityKey], [Name], [Capacity], [Created], [RowStamp] FROM {TableName} ORDER BY Name";
             var results = await Db.QueryAsync<Department>(sql);
             return results.ToList();
         }

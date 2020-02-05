@@ -15,41 +15,61 @@
                 <p class="card-text">
                     <div id="dvValitilationCapacity" class="glossary-cat-list">
                         <div class="table-responsive marginB15 border overflow-visible">
+                            <span data-bind="text:$root.departments().length"></span>
                             <table id="tblVentilation"
                                    class="table table-bordered  toggle-arrow mb-0 toggle-arrow-tiny"
                                    data-filtering="true" data-paging="true" data-sorting="true">
                                 <thead>
-                                    <tr>
+                                    <tr data-bind="foreach: departments">
+                                        <!-- ko {if: $index() === 0} -->
                                         <th>Unit</th>
-                                        <span data-bind="foreach: departments">
-                                            <th data-bind="text: name"></th>
-                                        </span>
-                                        <th></th>
+                                        <!-- /ko -->
+                                        <!-- ko {if: $index() >= 0} -->
+                                        <th data-bind="text: name"></th>
+                                        <!-- /ko -->
+                                        <!-- ko {if: $root.departments().length === $index() + 1} -->
+                                        <td>
+                                        </td>
+                                        <!-- /ko -->
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr>
+                                <tbody data-bind="foreach: ventilationCapacity">
+                                    <tr data-bind="foreach: $data.departmentCapacity">
+                                        <!-- ko {if: $index() === 0} -->
                                         <td>
                                             <input class="form-control" id="unit" data-val="true" placeholder="Unit" data-val-length-max="100" maxlength="100" type="text" value="">
                                         </td>
-
+                                        <!-- /ko -->
+                                        <!-- ko {if: $index() >= 0} -->
                                         <td>
-                                            <input class="form-control" type="number" step="1" min="1" value="1" data-val="true" placeholder="Unit" data-val-length-max="100" maxlength="100">
+                                            <input class="form-control" data-bind="textInput: capacity" type="number" step="1" min="1" value="1" data-val="true" data-val-length-max="100" maxlength="100">
                                         </td>
-                                        <td style="width:40px">
-                                            <button id="removeRow" class="btn btn-warning text-uppercase waves-effect waves-light" onclick="RemoveRow(this)" type="button"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                                        <!-- /ko -->
+                                        <!-- ko {if: $parent.departmentCapacity().length === $index() + 1} -->
+                                        <td>
+                                            <button id="removeRow" class="btn btn-warning text-uppercase waves-effect waves-light" data-bind="click:$root.removeRow.bind($root, $parent)" type="button"><i class="fa fa-trash" aria-hidden="true"></i></button>
                                         </td>
+                                        <!-- /ko -->
                                     </tr>
                                 </tbody>
                                 <tfoot>
-                                    <tr>
-                                        <td><input type="text" id="txtName" /></td>
-                                        <td><input type="text" id="txtCountry" /></td>
-                                        <td><input type="button" id="btnAdd" value="Add" /></td>
+                                    <tr data-bind="foreach: columnsTotal">
+                                        <!-- ko {if: $index() === 0} -->
+                                        <td></td>
+                                        <!-- /ko -->
+                                        <!-- ko {if: $index() >= 0} -->
+                                        <td>
+                                            <span data-bind="text: totalExpr, css: hasExceedLimit"></span>
+                                        </td>
+                                        <!-- /ko -->
+                                        <!-- ko {if: $parent.columnsTotal().length === $index() + 1} -->
+                                        <td>
+                                        </td>
+                                        <!-- /ko -->
                                     </tr>
                                 </tfoot>
                             </table>
-                            <button id="addRow" class="btn btn-success text-uppercase waves-effect waves-light" bind-data="click:AddRow" type="button"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                            <button id="addRow" class="btn btn-success text-uppercase waves-effect waves-light" data-bind="click:AddRow" type="button"><i class="fa fa-plus" aria-hidden="true"></i></button>
                         </div>
                     </div>
                 </p>
@@ -62,43 +82,9 @@
 </div>
 @section Scripts
 {
-    <script src="~/lib//knockout//knockout-min.js"></script>
+    <script src="~/lib/knockout/knockout-min.js"></script>
+    <script src="~/lib/knockout.mapping/knockout.mapping.min.js"></script>
     <script src="~/js/http/HttpFetchService.js"></script>
     <script src="~/js/http/HomePageService.js"></script>
     <script src="~/js/Index.js"></script>
-
-    <script>
-                                //objJsonArr = [];
-
-                                //// Need to correct this function
-                                //function AddRow(this) {
-                                //    if ($('#TicketMaterial :selected').val() != "" && $('#TicketMaterialBillCategory :selected').val() != "" && $('#quantity').val() != "") {
-                                //        var ObjNew = {
-                                //            "materialId": $('#TicketMaterial :selected').val(),
-                                //            "materialName": $('#TicketMaterial :selected').text(),
-                                //            "materialCategoryId": $('#TicketMaterialBillCategory :selected').val(),
-                                //            "materialCategoryName": $('#TicketMaterialBillCategory :selected').text(),
-                                //            "materialQty": $('#quantity').val()
-                                //        };
-                                //        objJsonArr.push(ObjNew);
-
-                                //        // Need to clone above row and prepend
-                                //        $('#tblVentilation tbody').prepend(
-                                //            '<tr>' +
-                                //            '<td class="name-text">' + $('#TicketMaterial :selected').text() + '</td>' +
-                                //            '<td class="discription-text">' + $('#TicketMaterialBillCategory :selected').text() + '</td>' +
-                                //            '<td class="name-text">' + $('#quantity').val() + '</td>' +
-                                //            '</tr>'
-                                //        )
-                                //        $('#tblVentilation .footable-empty').remove();
-
-                                //        // finally set value on hidden variable
-                                //        $('#hdnVentilation').val(JSON.stringify(objJsonArr));
-                                //    }
-                                //}
-
-                                //function RemoveRow(this) {
-
-                                //}
-    </script>
 }

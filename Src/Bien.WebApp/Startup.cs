@@ -42,15 +42,6 @@ namespace Bien.WebApp
                 .GetUrlHelper(x.GetRequiredService<IActionContextAccessor>().ActionContext));
 
             services.AddRazorPages();
-            services.AddControllers().SetCompatibilityVersion(CompatibilityVersion.Latest)
-            .AddJsonOptions(options =>
-            {
-                options.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
-                options.JsonSerializerOptions.IgnoreReadOnlyProperties = false;
-                options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
-                options.JsonSerializerOptions.IgnoreNullValues = true;
-                options.JsonSerializerOptions.WriteIndented = false;
-            });
 
             services.AddMvc(options =>
             {
@@ -82,14 +73,6 @@ namespace Bien.WebApp
                 options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
                 options.JsonSerializerOptions.IgnoreNullValues = true;
                 options.JsonSerializerOptions.WriteIndented = false;
-            });
-
-            services.AddMvc().SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Latest);
-
-            var connectionString = Configuration.GetConnectionString("DefaultConnection");
-            services.Configure<SqlStoreOptions>(config =>
-            {
-                config.ConnectionString = connectionString;
             });
 
             // configure business dependencies
@@ -149,6 +132,7 @@ namespace Bien.WebApp
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
+                endpoints.MapControllers();
             });
         }
 
@@ -156,7 +140,7 @@ namespace Bien.WebApp
         {
             // add the SQL Server DbFactory so that each repository
             // will use a SqlConnection for data access
-            services.AddSqlDbFactory(Configuration, "App");
+            services.AddSqlDbFactory(Configuration, "DefaultConnection");
 
             // service dependencies
             // configure business dependencies
