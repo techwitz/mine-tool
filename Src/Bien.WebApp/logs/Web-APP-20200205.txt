@@ -1,0 +1,1277 @@
+===> 2020-02-05 11:57:54.823 +05:30 [Information] Starting web host
+===> 2020-02-05 11:57:54.933 +05:30 [Information] User profile is available. Using '"C:\Users\ajander\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2020-02-05 11:57:54.942 +05:30 [Debug] Reading data from file '"C:\Users\ajander\AppData\Local\ASP.NET\DataProtection-Keys\key-5262b0a1-0648-4fec-8722-6e1f63d4c4ef.xml"'.
+===> 2020-02-05 11:57:54.983 +05:30 [Debug] Found key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef}.
+===> 2020-02-05 11:57:54.993 +05:30 [Debug] Considering key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} with expiration date 2020-02-10 10:50:23Z as default key.
+===> 2020-02-05 11:57:55.013 +05:30 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-02-05 11:57:55.015 +05:30 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2020-02-05 11:57:55.016 +05:30 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-02-05 11:57:55.019 +05:30 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2020-02-05 11:57:55.021 +05:30 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2020-02-05 11:57:55.023 +05:30 [Debug] Using key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} as the default key.
+===> 2020-02-05 11:57:55.024 +05:30 [Debug] Key ring with default key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} was loaded during application startup.
+===> 2020-02-05 11:57:55.275 +05:30 [Debug] Loaded hosting startup assembly "Bien.WebApp"
+===> 2020-02-05 11:57:55.328 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/  
+===> 2020-02-05 11:57:55.330 +05:30 [Debug] Wildcard detected, all requests with hosts will be allowed.
+===> 2020-02-05 11:57:55.334 +05:30 [Debug] The request path "/" does not match a supported file type
+===> 2020-02-05 11:57:55.340 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Error.cshtml"'.
+===> 2020-02-05 11:57:55.340 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Index.cshtml"'.
+===> 2020-02-05 11:57:55.340 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Privacy.cshtml"'.
+===> 2020-02-05 11:57:55.340 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Shared/_Layout.cshtml"'.
+===> 2020-02-05 11:57:55.340 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Shared/_ValidationScriptsPartial.cshtml"'.
+===> 2020-02-05 11:57:55.340 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/_ViewImports.cshtml"'.
+===> 2020-02-05 11:57:55.340 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/_ViewStart.cshtml"'.
+===> 2020-02-05 11:57:55.353 +05:30 [Debug] 1 candidate(s) found for the request path '"/"'
+===> 2020-02-05 11:57:55.355 +05:30 [Debug] Endpoint '"Page: /Index"' with route pattern '""' is valid for the request path '"/"'
+===> 2020-02-05 11:57:55.390 +05:30 [Debug] Request matched endpoint '"/Index"'
+===> 2020-02-05 11:57:55.392 +05:30 [Debug] The request cannot be served from cache because it contains a 'no-cache' cache directive.
+===> 2020-02-05 11:57:55.433 +05:30 [Information] Executing endpoint '"/Index"'
+===> 2020-02-05 11:57:55.440 +05:30 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+===> 2020-02-05 11:57:55.530 +05:30 [Information] Route matched with "{page = \"/Index\"}". Executing page "/Index"
+===> 2020-02-05 11:57:55.530 +05:30 [Debug] Execution plan of "authorization" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.AutoValidateAntiforgeryTokenAuthorizationFilter"]
+===> 2020-02-05 11:57:55.531 +05:30 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-02-05 11:57:55.531 +05:30 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+===> 2020-02-05 11:57:55.531 +05:30 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-02-05 11:57:55.531 +05:30 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-02-05 11:57:55.533 +05:30 [Debug] Executing page model factory for page "Bien.WebApp.Pages.Pages_Index" ("Bien.WebApp.Views")
+===> 2020-02-05 11:57:55.534 +05:30 [Debug] Executed page model factory for page "Bien.WebApp.Pages.Pages_Index" ("Bien.WebApp.Views")
+===> 2020-02-05 11:57:55.540 +05:30 [Information] Executing handler method "Bien.WebApp.Pages.IndexModel.OnGet" - ModelState is Valid
+===> 2020-02-05 11:57:55.540 +05:30 [Information] Executed handler method "OnGet", returned result "".
+===> 2020-02-05 11:57:55.543 +05:30 [Information] Executing an implicit handler method - ModelState is Valid
+===> 2020-02-05 11:57:55.543 +05:30 [Information] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult".
+===> 2020-02-05 11:57:55.559 +05:30 [Debug] View lookup cache miss for view '"_Layout"' in controller 'null'.
+===> 2020-02-05 11:57:55.599 +05:30 [Debug] Found the endpoints ["Page: /Index"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 11:57:55.606 +05:30 [Debug] Successfully processed template "" for "Page: /Index" resulting in "" and ""
+===> 2020-02-05 11:57:55.606 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Index"] with result "/"
+===> 2020-02-05 11:57:55.608 +05:30 [Debug] Found the endpoints ["Page: /Index"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 11:57:55.608 +05:30 [Debug] Successfully processed template "" for "Page: /Index" resulting in "" and ""
+===> 2020-02-05 11:57:55.608 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Index"] with result "/"
+===> 2020-02-05 11:57:55.609 +05:30 [Debug] Found the endpoints ["Page: /Privacy"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 11:57:55.609 +05:30 [Debug] Successfully processed template "Privacy" for "Page: /Privacy" resulting in "/Privacy" and ""
+===> 2020-02-05 11:57:55.609 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Privacy"] with result "/Privacy"
+===> 2020-02-05 11:57:55.610 +05:30 [Debug] Found the endpoints ["Page: /Privacy"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 11:57:55.610 +05:30 [Debug] Successfully processed template "Privacy" for "Page: /Privacy" resulting in "/Privacy" and ""
+===> 2020-02-05 11:57:55.610 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Privacy"] with result "/Privacy"
+===> 2020-02-05 11:57:55.630 +05:30 [Debug] The response will be compressed with '"br"'.
+===> 2020-02-05 11:57:55.670 +05:30 [Debug] Vary by rules were updated. Headers: "ACCEPT-ENCODING", Query keys: null
+===> 2020-02-05 11:57:55.682 +05:30 [Information] Executed page "/Index" in 147.657ms
+===> 2020-02-05 11:57:55.683 +05:30 [Information] Executed endpoint '"/Index"'
+===> 2020-02-05 11:57:55.685 +05:30 [Information] The response has been cached.
+===> 2020-02-05 11:57:55.689 +05:30 [Information] Request finished in 363.4722ms 200 text/html; charset=utf-8
+===> 2020-02-05 11:57:55.697 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/font-awesome/css/all.min.css  
+===> 2020-02-05 11:57:55.697 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/css/site.css  
+===> 2020-02-05 11:57:55.697 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/bootstrap/dist/css/bootstrap.min.css  
+===> 2020-02-05 11:57:55.697 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18  
+===> 2020-02-05 11:57:55.701 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/bootstrap/dist/js/bootstrap.bundle.min.js  
+===> 2020-02-05 11:57:55.701 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/font-awesome/js/all.min.js  
+===> 2020-02-05 11:57:55.704 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/jquery/dist/jquery.min.js  
+===> 2020-02-05 11:57:55.734 +05:30 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\css\site.css"'
+===> 2020-02-05 11:57:55.734 +05:30 [Information] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\js\site.js"'
+===> 2020-02-05 11:57:55.734 +05:30 [Information] Request finished in 36.2409ms 200 application/javascript
+===> 2020-02-05 11:57:55.734 +05:30 [Information] Request finished in 36.8663ms 200 text/css
+===> 2020-02-05 11:57:55.743 +05:30 [Information] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.min.css"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css"'
+===> 2020-02-05 11:57:55.743 +05:30 [Information] Sending file. Request path: '"/font-awesome/css/all.min.css"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\font-awesome\css\all.min.css"'
+===> 2020-02-05 11:57:55.744 +05:30 [Information] Request finished in 47.1112ms 200 text/css
+===> 2020-02-05 11:57:55.744 +05:30 [Information] Request finished in 46.7283ms 200 text/css
+===> 2020-02-05 11:57:55.770 +05:30 [Information] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.bundle.min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js"'
+===> 2020-02-05 11:57:55.770 +05:30 [Information] Request finished in 69.9216ms 200 application/javascript
+===> 2020-02-05 11:57:55.782 +05:30 [Information] Sending file. Request path: '"/lib/jquery/dist/jquery.min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\jquery\dist\jquery.min.js"'
+===> 2020-02-05 11:57:55.783 +05:30 [Information] Request finished in 78.6839ms 200 application/javascript
+===> 2020-02-05 11:57:55.843 +05:30 [Information] Sending file. Request path: '"/font-awesome/js/all.min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\font-awesome\js\all.min.js"'
+===> 2020-02-05 11:57:55.843 +05:30 [Information] Request finished in 142.8504ms 200 application/javascript
+===> 2020-02-05 11:57:59.856 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/Privacy  
+===> 2020-02-05 11:57:59.857 +05:30 [Debug] The request path "/Privacy" does not match a supported file type
+===> 2020-02-05 11:57:59.860 +05:30 [Debug] 1 candidate(s) found for the request path '"/Privacy"'
+===> 2020-02-05 11:57:59.860 +05:30 [Debug] Endpoint '"Page: /Privacy"' with route pattern '"Privacy"' is valid for the request path '"/Privacy"'
+===> 2020-02-05 11:57:59.861 +05:30 [Debug] Request matched endpoint '"/Privacy"'
+===> 2020-02-05 11:57:59.861 +05:30 [Debug] The request cannot be served from cache because it contains a 'no-cache' cache directive.
+===> 2020-02-05 11:57:59.862 +05:30 [Information] Executing endpoint '"/Privacy"'
+===> 2020-02-05 11:57:59.864 +05:30 [Information] Route matched with "{page = \"/Privacy\"}". Executing page "/Privacy"
+===> 2020-02-05 11:57:59.864 +05:30 [Debug] Execution plan of "authorization" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.AutoValidateAntiforgeryTokenAuthorizationFilter"]
+===> 2020-02-05 11:57:59.864 +05:30 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-02-05 11:57:59.864 +05:30 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+===> 2020-02-05 11:57:59.864 +05:30 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-02-05 11:57:59.865 +05:30 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-02-05 11:57:59.865 +05:30 [Debug] Executing page model factory for page "Bien.WebApp.Pages.Pages_Privacy" ("Bien.WebApp.Views")
+===> 2020-02-05 11:57:59.865 +05:30 [Debug] Executed page model factory for page "Bien.WebApp.Pages.Pages_Privacy" ("Bien.WebApp.Views")
+===> 2020-02-05 11:57:59.865 +05:30 [Information] Executing handler method "Bien.WebApp.Pages.PrivacyModel.OnGet" - ModelState is Valid
+===> 2020-02-05 11:57:59.865 +05:30 [Information] Executed handler method "OnGet", returned result "".
+===> 2020-02-05 11:57:59.866 +05:30 [Information] Executing an implicit handler method - ModelState is Valid
+===> 2020-02-05 11:57:59.866 +05:30 [Information] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult".
+===> 2020-02-05 11:57:59.869 +05:30 [Debug] View lookup cache miss for view '"_Layout"' in controller 'null'.
+===> 2020-02-05 11:57:59.870 +05:30 [Debug] Found the endpoints ["Page: /Index"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 11:57:59.870 +05:30 [Debug] Successfully processed template "" for "Page: /Index" resulting in "" and ""
+===> 2020-02-05 11:57:59.870 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Index"] with result "/"
+===> 2020-02-05 11:57:59.870 +05:30 [Debug] Found the endpoints ["Page: /Index"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 11:57:59.870 +05:30 [Debug] Successfully processed template "" for "Page: /Index" resulting in "" and ""
+===> 2020-02-05 11:57:59.870 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Index"] with result "/"
+===> 2020-02-05 11:57:59.870 +05:30 [Debug] Found the endpoints ["Page: /Privacy"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 11:57:59.870 +05:30 [Debug] Successfully processed template "Privacy" for "Page: /Privacy" resulting in "/Privacy" and ""
+===> 2020-02-05 11:57:59.870 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Privacy"] with result "/Privacy"
+===> 2020-02-05 11:57:59.871 +05:30 [Debug] Found the endpoints ["Page: /Privacy"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 11:57:59.871 +05:30 [Debug] Successfully processed template "Privacy" for "Page: /Privacy" resulting in "/Privacy" and ""
+===> 2020-02-05 11:57:59.871 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Privacy"] with result "/Privacy"
+===> 2020-02-05 11:57:59.871 +05:30 [Debug] The response will be compressed with '"br"'.
+===> 2020-02-05 11:57:59.872 +05:30 [Debug] Vary by rules were updated. Headers: "ACCEPT-ENCODING", Query keys: null
+===> 2020-02-05 11:57:59.872 +05:30 [Information] Executed page "/Privacy" in 7.8139ms
+===> 2020-02-05 11:57:59.873 +05:30 [Information] Executed endpoint '"/Privacy"'
+===> 2020-02-05 11:57:59.873 +05:30 [Information] The response has been cached.
+===> 2020-02-05 11:57:59.873 +05:30 [Information] Request finished in 17.4293ms 200 text/html; charset=utf-8
+===> 2020-02-05 11:57:59.885 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/font-awesome/css/all.min.css  
+===> 2020-02-05 11:57:59.885 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/css/site.css  
+===> 2020-02-05 11:57:59.885 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/bootstrap/dist/css/bootstrap.min.css  
+===> 2020-02-05 11:57:59.885 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18  
+===> 2020-02-05 11:57:59.885 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/font-awesome/js/all.min.js  
+===> 2020-02-05 11:57:59.886 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/jquery/dist/jquery.min.js  
+===> 2020-02-05 11:57:59.886 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/bootstrap/dist/js/bootstrap.bundle.min.js  
+===> 2020-02-05 11:57:59.887 +05:30 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\css\site.css"'
+===> 2020-02-05 11:57:59.887 +05:30 [Information] Request finished in 2.9489ms 200 text/css
+===> 2020-02-05 11:57:59.892 +05:30 [Information] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\js\site.js"'
+===> 2020-02-05 11:57:59.893 +05:30 [Information] Request finished in 7.2761ms 200 application/javascript
+===> 2020-02-05 11:57:59.905 +05:30 [Information] Sending file. Request path: '"/font-awesome/css/all.min.css"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\font-awesome\css\all.min.css"'
+===> 2020-02-05 11:57:59.909 +05:30 [Information] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.bundle.min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js"'
+===> 2020-02-05 11:57:59.909 +05:30 [Information] Request finished in 23.8608ms 200 text/css
+===> 2020-02-05 11:57:59.915 +05:30 [Information] Request finished in 28.2701ms 200 application/javascript
+===> 2020-02-05 11:57:59.915 +05:30 [Information] Sending file. Request path: '"/lib/jquery/dist/jquery.min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\jquery\dist\jquery.min.js"'
+===> 2020-02-05 11:57:59.916 +05:30 [Information] Request finished in 29.9569ms 200 application/javascript
+===> 2020-02-05 11:57:59.919 +05:30 [Information] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.min.css"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css"'
+===> 2020-02-05 11:57:59.920 +05:30 [Information] Request finished in 34.9114ms 200 text/css
+===> 2020-02-05 11:57:59.923 +05:30 [Information] Sending file. Request path: '"/font-awesome/js/all.min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\font-awesome\js\all.min.js"'
+===> 2020-02-05 11:57:59.923 +05:30 [Information] Request finished in 37.7863ms 200 application/javascript
+===> 2020-02-05 12:00:37.494 +05:30 [Information] Starting web host
+===> 2020-02-05 12:00:37.575 +05:30 [Information] User profile is available. Using '"C:\Users\ajander\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2020-02-05 12:00:37.584 +05:30 [Debug] Reading data from file '"C:\Users\ajander\AppData\Local\ASP.NET\DataProtection-Keys\key-5262b0a1-0648-4fec-8722-6e1f63d4c4ef.xml"'.
+===> 2020-02-05 12:00:37.601 +05:30 [Debug] Found key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef}.
+===> 2020-02-05 12:00:37.608 +05:30 [Debug] Considering key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} with expiration date 2020-02-10 10:50:23Z as default key.
+===> 2020-02-05 12:00:37.626 +05:30 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-02-05 12:00:37.628 +05:30 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2020-02-05 12:00:37.629 +05:30 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-02-05 12:00:37.631 +05:30 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2020-02-05 12:00:37.633 +05:30 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2020-02-05 12:00:37.635 +05:30 [Debug] Using key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} as the default key.
+===> 2020-02-05 12:00:37.636 +05:30 [Debug] Key ring with default key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} was loaded during application startup.
+===> 2020-02-05 12:00:37.754 +05:30 [Debug] Loaded hosting startup assembly "Bien.WebApp"
+===> 2020-02-05 12:00:37.785 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/  
+===> 2020-02-05 12:00:37.787 +05:30 [Debug] Wildcard detected, all requests with hosts will be allowed.
+===> 2020-02-05 12:00:37.790 +05:30 [Debug] The request path "/" does not match a supported file type
+===> 2020-02-05 12:00:37.795 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Error.cshtml"'.
+===> 2020-02-05 12:00:37.795 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Index.cshtml"'.
+===> 2020-02-05 12:00:37.795 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Privacy.cshtml"'.
+===> 2020-02-05 12:00:37.795 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Shared/_Layout.cshtml"'.
+===> 2020-02-05 12:00:37.795 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Shared/_ValidationScriptsPartial.cshtml"'.
+===> 2020-02-05 12:00:37.795 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/_ViewImports.cshtml"'.
+===> 2020-02-05 12:00:37.795 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/_ViewStart.cshtml"'.
+===> 2020-02-05 12:00:37.806 +05:30 [Debug] 1 candidate(s) found for the request path '"/"'
+===> 2020-02-05 12:00:37.808 +05:30 [Debug] Endpoint '"Page: /Index"' with route pattern '""' is valid for the request path '"/"'
+===> 2020-02-05 12:00:37.854 +05:30 [Debug] Request matched endpoint '"/Index"'
+===> 2020-02-05 12:00:37.856 +05:30 [Debug] The request cannot be served from cache because it contains a 'no-cache' cache directive.
+===> 2020-02-05 12:00:37.871 +05:30 [Information] Executing endpoint '"/Index"'
+===> 2020-02-05 12:00:37.877 +05:30 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+===> 2020-02-05 12:00:37.931 +05:30 [Information] Route matched with "{page = \"/Index\"}". Executing page "/Index"
+===> 2020-02-05 12:00:37.931 +05:30 [Debug] Execution plan of "authorization" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.AutoValidateAntiforgeryTokenAuthorizationFilter"]
+===> 2020-02-05 12:00:37.932 +05:30 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-02-05 12:00:37.932 +05:30 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+===> 2020-02-05 12:00:37.932 +05:30 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-02-05 12:00:37.932 +05:30 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-02-05 12:00:37.934 +05:30 [Debug] Executing page model factory for page "Bien.WebApp.Pages.Pages_Index" ("Bien.WebApp.Views")
+===> 2020-02-05 12:00:37.934 +05:30 [Debug] Executed page model factory for page "Bien.WebApp.Pages.Pages_Index" ("Bien.WebApp.Views")
+===> 2020-02-05 12:00:37.940 +05:30 [Information] Executing handler method "Bien.WebApp.Pages.IndexModel.OnGet" - ModelState is Valid
+===> 2020-02-05 12:00:37.940 +05:30 [Information] Executed handler method "OnGet", returned result "".
+===> 2020-02-05 12:00:37.943 +05:30 [Information] Executing an implicit handler method - ModelState is Valid
+===> 2020-02-05 12:00:37.943 +05:30 [Information] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult".
+===> 2020-02-05 12:00:38.025 +05:30 [Information] Executed page "/Index" in 89.3769ms
+===> 2020-02-05 12:00:38.026 +05:30 [Information] Executed endpoint '"/Index"'
+===> 2020-02-05 12:00:38.044 +05:30 [Error] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Bien.WebApp.Pages.Pages_Index.ExecuteAsync() in D:\Source\Repos\mine-tool\Src\Bien.WebApp\Pages\Index.cshtml:line 24
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Bien.WebApp.Startup.<>c.<<Configure>b__5_0>d.MoveNext() in D:\Source\Repos\mine-tool\Src\Bien.WebApp\Startup.cs:line 102
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+===> 2020-02-05 12:00:38.191 +05:30 [Information] Request finished in 407.7769ms 500 text/html; charset=utf-8
+===> 2020-02-05 12:01:53.182 +05:30 [Information] Starting web host
+===> 2020-02-05 12:01:53.264 +05:30 [Information] User profile is available. Using '"C:\Users\ajander\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2020-02-05 12:01:53.273 +05:30 [Debug] Reading data from file '"C:\Users\ajander\AppData\Local\ASP.NET\DataProtection-Keys\key-5262b0a1-0648-4fec-8722-6e1f63d4c4ef.xml"'.
+===> 2020-02-05 12:01:53.291 +05:30 [Debug] Found key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef}.
+===> 2020-02-05 12:01:53.299 +05:30 [Debug] Considering key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} with expiration date 2020-02-10 10:50:23Z as default key.
+===> 2020-02-05 12:01:53.317 +05:30 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-02-05 12:01:53.319 +05:30 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2020-02-05 12:01:53.320 +05:30 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-02-05 12:01:53.322 +05:30 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2020-02-05 12:01:53.324 +05:30 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2020-02-05 12:01:53.326 +05:30 [Debug] Using key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} as the default key.
+===> 2020-02-05 12:01:53.326 +05:30 [Debug] Key ring with default key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} was loaded during application startup.
+===> 2020-02-05 12:01:53.419 +05:30 [Debug] Loaded hosting startup assembly "Bien.WebApp"
+===> 2020-02-05 12:01:53.445 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/  
+===> 2020-02-05 12:01:53.447 +05:30 [Debug] Wildcard detected, all requests with hosts will be allowed.
+===> 2020-02-05 12:01:53.450 +05:30 [Debug] The request path "/" does not match a supported file type
+===> 2020-02-05 12:01:53.455 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Error.cshtml"'.
+===> 2020-02-05 12:01:53.455 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Index.cshtml"'.
+===> 2020-02-05 12:01:53.455 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Privacy.cshtml"'.
+===> 2020-02-05 12:01:53.455 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Shared/_Layout.cshtml"'.
+===> 2020-02-05 12:01:53.455 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Shared/_ValidationScriptsPartial.cshtml"'.
+===> 2020-02-05 12:01:53.456 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/_ViewImports.cshtml"'.
+===> 2020-02-05 12:01:53.456 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/_ViewStart.cshtml"'.
+===> 2020-02-05 12:01:53.466 +05:30 [Debug] 1 candidate(s) found for the request path '"/"'
+===> 2020-02-05 12:01:53.468 +05:30 [Debug] Endpoint '"Page: /Index"' with route pattern '""' is valid for the request path '"/"'
+===> 2020-02-05 12:01:53.496 +05:30 [Debug] Request matched endpoint '"/Index"'
+===> 2020-02-05 12:01:53.498 +05:30 [Debug] The request cannot be served from cache because it contains a 'no-cache' cache directive.
+===> 2020-02-05 12:01:53.513 +05:30 [Information] Executing endpoint '"/Index"'
+===> 2020-02-05 12:01:53.519 +05:30 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+===> 2020-02-05 12:01:53.573 +05:30 [Information] Route matched with "{page = \"/Index\"}". Executing page "/Index"
+===> 2020-02-05 12:01:53.573 +05:30 [Debug] Execution plan of "authorization" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.AutoValidateAntiforgeryTokenAuthorizationFilter"]
+===> 2020-02-05 12:01:53.573 +05:30 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-02-05 12:01:53.574 +05:30 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+===> 2020-02-05 12:01:53.574 +05:30 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-02-05 12:01:53.574 +05:30 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-02-05 12:01:53.576 +05:30 [Debug] Executing page model factory for page "Bien.WebApp.Pages.Pages_Index" ("Bien.WebApp.Views")
+===> 2020-02-05 12:01:53.576 +05:30 [Debug] Executed page model factory for page "Bien.WebApp.Pages.Pages_Index" ("Bien.WebApp.Views")
+===> 2020-02-05 12:01:53.583 +05:30 [Information] Executing handler method "Bien.WebApp.Pages.IndexModel.OnGet" - ModelState is Valid
+===> 2020-02-05 12:01:53.583 +05:30 [Information] Executed handler method "OnGet", returned result "".
+===> 2020-02-05 12:01:53.587 +05:30 [Information] Executing an implicit handler method - ModelState is Valid
+===> 2020-02-05 12:01:53.587 +05:30 [Information] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult".
+===> 2020-02-05 12:01:53.603 +05:30 [Debug] View lookup cache miss for view '"_Layout"' in controller 'null'.
+===> 2020-02-05 12:01:53.640 +05:30 [Debug] Found the endpoints ["Page: /Index"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 12:01:53.646 +05:30 [Debug] Successfully processed template "" for "Page: /Index" resulting in "" and ""
+===> 2020-02-05 12:01:53.647 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Index"] with result "/"
+===> 2020-02-05 12:01:53.648 +05:30 [Debug] Found the endpoints ["Page: /Index"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 12:01:53.648 +05:30 [Debug] Successfully processed template "" for "Page: /Index" resulting in "" and ""
+===> 2020-02-05 12:01:53.648 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Index"] with result "/"
+===> 2020-02-05 12:01:53.649 +05:30 [Debug] Found the endpoints ["Page: /Privacy"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 12:01:53.649 +05:30 [Debug] Successfully processed template "Privacy" for "Page: /Privacy" resulting in "/Privacy" and ""
+===> 2020-02-05 12:01:53.649 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Privacy"] with result "/Privacy"
+===> 2020-02-05 12:01:53.650 +05:30 [Debug] Found the endpoints ["Page: /Privacy"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 12:01:53.650 +05:30 [Debug] Successfully processed template "Privacy" for "Page: /Privacy" resulting in "/Privacy" and ""
+===> 2020-02-05 12:01:53.650 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Privacy"] with result "/Privacy"
+===> 2020-02-05 12:01:53.666 +05:30 [Debug] The response will be compressed with '"br"'.
+===> 2020-02-05 12:01:53.680 +05:30 [Debug] Vary by rules were updated. Headers: "ACCEPT-ENCODING", Query keys: null
+===> 2020-02-05 12:01:53.692 +05:30 [Information] Executed page "/Index" in 114.2918ms
+===> 2020-02-05 12:01:53.692 +05:30 [Information] Executed endpoint '"/Index"'
+===> 2020-02-05 12:01:53.694 +05:30 [Information] The response could not be cached for this request.
+===> 2020-02-05 12:01:53.696 +05:30 [Information] Request finished in 253.2602ms 200 text/html; charset=utf-8
+===> 2020-02-05 12:01:53.709 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/bootstrap/dist/js/bootstrap.bundle.min.js  
+===> 2020-02-05 12:01:53.709 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/css/site.css  
+===> 2020-02-05 12:01:53.709 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18  
+===> 2020-02-05 12:01:53.709 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/bootstrap/dist/css/bootstrap.min.css  
+===> 2020-02-05 12:01:53.712 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/font-awesome/js/all.min.js  
+===> 2020-02-05 12:01:53.713 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/font-awesome/css/all.min.css  
+===> 2020-02-05 12:01:53.730 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/jquery/dist/jquery.min.js  
+===> 2020-02-05 12:01:53.742 +05:30 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\css\site.css"'
+===> 2020-02-05 12:01:53.742 +05:30 [Information] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\js\site.js"'
+===> 2020-02-05 12:01:53.743 +05:30 [Information] Request finished in 33.3008ms 200 text/css
+===> 2020-02-05 12:01:53.743 +05:30 [Information] Request finished in 33.3124ms 200 application/javascript
+===> 2020-02-05 12:01:53.767 +05:30 [Information] Sending file. Request path: '"/font-awesome/css/all.min.css"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\font-awesome\css\all.min.css"'
+===> 2020-02-05 12:01:53.767 +05:30 [Information] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.min.css"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css"'
+===> 2020-02-05 12:01:53.767 +05:30 [Information] Sending file. Request path: '"/lib/jquery/dist/jquery.min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\jquery\dist\jquery.min.js"'
+===> 2020-02-05 12:01:53.767 +05:30 [Information] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.bundle.min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js"'
+===> 2020-02-05 12:01:53.770 +05:30 [Information] Request finished in 58.3045ms 200 text/css
+===> 2020-02-05 12:01:53.770 +05:30 [Information] Request finished in 61.2836ms 200 text/css
+===> 2020-02-05 12:01:53.770 +05:30 [Information] Request finished in 61.2787ms 200 application/javascript
+===> 2020-02-05 12:01:53.771 +05:30 [Information] Request finished in 40.8586ms 200 application/javascript
+===> 2020-02-05 12:01:53.774 +05:30 [Information] Sending file. Request path: '"/font-awesome/js/all.min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\font-awesome\js\all.min.js"'
+===> 2020-02-05 12:01:53.774 +05:30 [Information] Request finished in 64.8756ms 200 application/javascript
+===> 2020-02-05 12:01:53.803 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/font-awesome/webfonts/fa-solid-900.woff2  
+===> 2020-02-05 12:01:53.817 +05:30 [Information] Sending file. Request path: '"/font-awesome/webfonts/fa-solid-900.woff2"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\font-awesome\webfonts\fa-solid-900.woff2"'
+===> 2020-02-05 12:01:53.817 +05:30 [Information] Request finished in 14.6183ms 200 font/woff2
+===> 2020-02-05 12:02:53.144 +05:30 [Information] Starting web host
+===> 2020-02-05 12:02:53.225 +05:30 [Information] User profile is available. Using '"C:\Users\ajander\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2020-02-05 12:02:53.234 +05:30 [Debug] Reading data from file '"C:\Users\ajander\AppData\Local\ASP.NET\DataProtection-Keys\key-5262b0a1-0648-4fec-8722-6e1f63d4c4ef.xml"'.
+===> 2020-02-05 12:02:53.253 +05:30 [Debug] Found key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef}.
+===> 2020-02-05 12:02:53.261 +05:30 [Debug] Considering key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} with expiration date 2020-02-10 10:50:23Z as default key.
+===> 2020-02-05 12:02:53.282 +05:30 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-02-05 12:02:53.284 +05:30 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2020-02-05 12:02:53.285 +05:30 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-02-05 12:02:53.287 +05:30 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2020-02-05 12:02:53.289 +05:30 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2020-02-05 12:02:53.292 +05:30 [Debug] Using key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} as the default key.
+===> 2020-02-05 12:02:53.293 +05:30 [Debug] Key ring with default key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} was loaded during application startup.
+===> 2020-02-05 12:02:53.382 +05:30 [Debug] Loaded hosting startup assembly "Bien.WebApp"
+===> 2020-02-05 12:02:53.409 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/  
+===> 2020-02-05 12:02:53.410 +05:30 [Debug] Wildcard detected, all requests with hosts will be allowed.
+===> 2020-02-05 12:02:53.413 +05:30 [Debug] The request path "/" does not match a supported file type
+===> 2020-02-05 12:02:53.418 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Error.cshtml"'.
+===> 2020-02-05 12:02:53.418 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Index.cshtml"'.
+===> 2020-02-05 12:02:53.418 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Privacy.cshtml"'.
+===> 2020-02-05 12:02:53.418 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Shared/_Layout.cshtml"'.
+===> 2020-02-05 12:02:53.418 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Shared/_ValidationScriptsPartial.cshtml"'.
+===> 2020-02-05 12:02:53.418 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/_ViewImports.cshtml"'.
+===> 2020-02-05 12:02:53.418 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/_ViewStart.cshtml"'.
+===> 2020-02-05 12:02:53.428 +05:30 [Debug] 1 candidate(s) found for the request path '"/"'
+===> 2020-02-05 12:02:53.430 +05:30 [Debug] Endpoint '"Page: /Index"' with route pattern '""' is valid for the request path '"/"'
+===> 2020-02-05 12:02:53.459 +05:30 [Debug] Request matched endpoint '"/Index"'
+===> 2020-02-05 12:02:53.461 +05:30 [Debug] The request cannot be served from cache because it contains a 'no-cache' cache directive.
+===> 2020-02-05 12:02:53.478 +05:30 [Information] Executing endpoint '"/Index"'
+===> 2020-02-05 12:02:53.484 +05:30 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+===> 2020-02-05 12:02:53.541 +05:30 [Information] Route matched with "{page = \"/Index\"}". Executing page "/Index"
+===> 2020-02-05 12:02:53.541 +05:30 [Debug] Execution plan of "authorization" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.AutoValidateAntiforgeryTokenAuthorizationFilter"]
+===> 2020-02-05 12:02:53.541 +05:30 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-02-05 12:02:53.542 +05:30 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+===> 2020-02-05 12:02:53.542 +05:30 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-02-05 12:02:53.542 +05:30 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-02-05 12:02:53.544 +05:30 [Debug] Executing page model factory for page "Bien.WebApp.Pages.Pages_Index" ("Bien.WebApp.Views")
+===> 2020-02-05 12:02:53.544 +05:30 [Debug] Executed page model factory for page "Bien.WebApp.Pages.Pages_Index" ("Bien.WebApp.Views")
+===> 2020-02-05 12:02:53.550 +05:30 [Information] Executing handler method "Bien.WebApp.Pages.IndexModel.OnGet" - ModelState is Valid
+===> 2020-02-05 12:02:53.550 +05:30 [Information] Executed handler method "OnGet", returned result "".
+===> 2020-02-05 12:02:53.553 +05:30 [Information] Executing an implicit handler method - ModelState is Valid
+===> 2020-02-05 12:02:53.553 +05:30 [Information] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult".
+===> 2020-02-05 12:02:53.567 +05:30 [Debug] View lookup cache miss for view '"_Layout"' in controller 'null'.
+===> 2020-02-05 12:02:53.606 +05:30 [Debug] Found the endpoints ["Page: /Index"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 12:02:53.612 +05:30 [Debug] Successfully processed template "" for "Page: /Index" resulting in "" and ""
+===> 2020-02-05 12:02:53.613 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Index"] with result "/"
+===> 2020-02-05 12:02:53.614 +05:30 [Debug] Found the endpoints ["Page: /Index"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 12:02:53.614 +05:30 [Debug] Successfully processed template "" for "Page: /Index" resulting in "" and ""
+===> 2020-02-05 12:02:53.614 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Index"] with result "/"
+===> 2020-02-05 12:02:53.615 +05:30 [Debug] Found the endpoints ["Page: /Privacy"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 12:02:53.615 +05:30 [Debug] Successfully processed template "Privacy" for "Page: /Privacy" resulting in "/Privacy" and ""
+===> 2020-02-05 12:02:53.615 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Privacy"] with result "/Privacy"
+===> 2020-02-05 12:02:53.616 +05:30 [Debug] Found the endpoints ["Page: /Privacy"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 12:02:53.616 +05:30 [Debug] Successfully processed template "Privacy" for "Page: /Privacy" resulting in "/Privacy" and ""
+===> 2020-02-05 12:02:53.616 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Privacy"] with result "/Privacy"
+===> 2020-02-05 12:02:53.632 +05:30 [Debug] The response will be compressed with '"br"'.
+===> 2020-02-05 12:02:53.648 +05:30 [Debug] Vary by rules were updated. Headers: "ACCEPT-ENCODING", Query keys: null
+===> 2020-02-05 12:02:53.660 +05:30 [Information] Executed page "/Index" in 114.2574ms
+===> 2020-02-05 12:02:53.660 +05:30 [Information] Executed endpoint '"/Index"'
+===> 2020-02-05 12:02:53.662 +05:30 [Information] The response could not be cached for this request.
+===> 2020-02-05 12:02:53.665 +05:30 [Information] Request finished in 257.8648ms 200 text/html; charset=utf-8
+===> 2020-02-05 12:02:53.676 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/css/site.css  
+===> 2020-02-05 12:02:53.676 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/font-awesome/css/all.min.css  
+===> 2020-02-05 12:02:53.676 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/bootstrap/dist/css/bootstrap.min.css  
+===> 2020-02-05 12:02:53.676 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/jquery/dist/jquery.min.js  
+===> 2020-02-05 12:02:53.681 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18  
+===> 2020-02-05 12:02:53.681 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/font-awesome/js/all.min.js  
+===> 2020-02-05 12:02:53.684 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/bootstrap/dist/js/bootstrap.bundle.min.js  
+===> 2020-02-05 12:02:53.714 +05:30 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\css\site.css"'
+===> 2020-02-05 12:02:53.714 +05:30 [Information] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\js\site.js"'
+===> 2020-02-05 12:02:53.717 +05:30 [Information] Request finished in 36.3794ms 200 application/javascript
+===> 2020-02-05 12:02:53.717 +05:30 [Information] Request finished in 41.93ms 200 text/css
+===> 2020-02-05 12:02:53.743 +05:30 [Information] Sending file. Request path: '"/font-awesome/css/all.min.css"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\font-awesome\css\all.min.css"'
+===> 2020-02-05 12:02:53.743 +05:30 [Information] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.bundle.min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js"'
+===> 2020-02-05 12:02:53.743 +05:30 [Information] Sending file. Request path: '"/lib/jquery/dist/jquery.min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\jquery\dist\jquery.min.js"'
+===> 2020-02-05 12:02:53.744 +05:30 [Information] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.min.css"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css"'
+===> 2020-02-05 12:02:53.748 +05:30 [Information] Request finished in 64.3163ms 200 application/javascript
+===> 2020-02-05 12:02:53.748 +05:30 [Information] Request finished in 72.1484ms 200 text/css
+===> 2020-02-05 12:02:53.748 +05:30 [Information] Request finished in 71.4534ms 200 application/javascript
+===> 2020-02-05 12:02:53.748 +05:30 [Information] Request finished in 71.9161ms 200 text/css
+===> 2020-02-05 12:02:53.750 +05:30 [Information] Sending file. Request path: '"/font-awesome/js/all.min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\font-awesome\js\all.min.js"'
+===> 2020-02-05 12:02:53.750 +05:30 [Information] Request finished in 68.9951ms 200 application/javascript
+===> 2020-02-05 12:02:53.785 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/font-awesome/webfonts/fa-solid-900.woff2  
+===> 2020-02-05 12:02:53.788 +05:30 [Information] Sending file. Request path: '"/font-awesome/webfonts/fa-solid-900.woff2"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\font-awesome\webfonts\fa-solid-900.woff2"'
+===> 2020-02-05 12:02:53.788 +05:30 [Information] Request finished in 2.6971ms 200 font/woff2
+===> 2020-02-05 12:03:13.543 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/  
+===> 2020-02-05 12:03:13.545 +05:30 [Debug] The request path "/" does not match a supported file type
+===> 2020-02-05 12:03:13.546 +05:30 [Debug] 1 candidate(s) found for the request path '"/"'
+===> 2020-02-05 12:03:13.547 +05:30 [Debug] Endpoint '"Page: /Index"' with route pattern '""' is valid for the request path '"/"'
+===> 2020-02-05 12:03:13.548 +05:30 [Debug] Request matched endpoint '"/Index"'
+===> 2020-02-05 12:03:13.549 +05:30 [Debug] The request cannot be served from cache because it contains a 'no-cache' cache directive.
+===> 2020-02-05 12:03:13.550 +05:30 [Information] Executing endpoint '"/Index"'
+===> 2020-02-05 12:03:13.551 +05:30 [Information] Route matched with "{page = \"/Index\"}". Executing page "/Index"
+===> 2020-02-05 12:03:13.552 +05:30 [Debug] Execution plan of "authorization" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.AutoValidateAntiforgeryTokenAuthorizationFilter"]
+===> 2020-02-05 12:03:13.552 +05:30 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-02-05 12:03:13.552 +05:30 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+===> 2020-02-05 12:03:13.552 +05:30 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-02-05 12:03:13.552 +05:30 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-02-05 12:03:13.553 +05:30 [Debug] Executing page model factory for page "Bien.WebApp.Pages.Pages_Index" ("Bien.WebApp.Views")
+===> 2020-02-05 12:03:13.553 +05:30 [Debug] Executed page model factory for page "Bien.WebApp.Pages.Pages_Index" ("Bien.WebApp.Views")
+===> 2020-02-05 12:03:13.553 +05:30 [Information] Executing handler method "Bien.WebApp.Pages.IndexModel.OnGet" - ModelState is Valid
+===> 2020-02-05 12:03:13.554 +05:30 [Information] Executed handler method "OnGet", returned result "".
+===> 2020-02-05 12:03:13.554 +05:30 [Information] Executing an implicit handler method - ModelState is Valid
+===> 2020-02-05 12:03:13.554 +05:30 [Information] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult".
+===> 2020-02-05 12:03:13.556 +05:30 [Debug] View lookup cache hit for view '"_Layout"' in controller 'null'.
+===> 2020-02-05 12:03:13.558 +05:30 [Debug] Found the endpoints ["Page: /Index"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 12:03:13.558 +05:30 [Debug] Successfully processed template "" for "Page: /Index" resulting in "" and ""
+===> 2020-02-05 12:03:13.558 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Index"] with result "/"
+===> 2020-02-05 12:03:13.558 +05:30 [Debug] Found the endpoints ["Page: /Index"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 12:03:13.558 +05:30 [Debug] Successfully processed template "" for "Page: /Index" resulting in "" and ""
+===> 2020-02-05 12:03:13.558 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Index"] with result "/"
+===> 2020-02-05 12:03:13.558 +05:30 [Debug] Found the endpoints ["Page: /Privacy"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 12:03:13.558 +05:30 [Debug] Successfully processed template "Privacy" for "Page: /Privacy" resulting in "/Privacy" and ""
+===> 2020-02-05 12:03:13.558 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Privacy"] with result "/Privacy"
+===> 2020-02-05 12:03:13.559 +05:30 [Debug] Found the endpoints ["Page: /Privacy"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 12:03:13.559 +05:30 [Debug] Successfully processed template "Privacy" for "Page: /Privacy" resulting in "/Privacy" and ""
+===> 2020-02-05 12:03:13.559 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Privacy"] with result "/Privacy"
+===> 2020-02-05 12:03:13.559 +05:30 [Debug] The response will be compressed with '"br"'.
+===> 2020-02-05 12:03:13.560 +05:30 [Debug] Vary by rules were updated. Headers: "ACCEPT-ENCODING", Query keys: null
+===> 2020-02-05 12:03:13.561 +05:30 [Information] Executed page "/Index" in 8.249ms
+===> 2020-02-05 12:03:13.561 +05:30 [Information] Executed endpoint '"/Index"'
+===> 2020-02-05 12:03:13.561 +05:30 [Information] The response could not be cached for this request.
+===> 2020-02-05 12:03:13.561 +05:30 [Information] Request finished in 18.5471ms 200 text/html; charset=utf-8
+===> 2020-02-05 12:03:13.575 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/font-awesome/css/all.min.css  
+===> 2020-02-05 12:03:13.575 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/css/site.css  
+===> 2020-02-05 12:03:13.575 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/bootstrap/dist/css/bootstrap.min.css  
+===> 2020-02-05 12:03:13.575 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18  
+===> 2020-02-05 12:03:13.576 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/font-awesome/js/all.min.js  
+===> 2020-02-05 12:03:13.576 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/jquery/dist/jquery.min.js  
+===> 2020-02-05 12:03:13.576 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/bootstrap/dist/js/bootstrap.bundle.min.js  
+===> 2020-02-05 12:03:13.579 +05:30 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\css\site.css"'
+===> 2020-02-05 12:03:13.580 +05:30 [Information] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\js\site.js"'
+===> 2020-02-05 12:03:13.580 +05:30 [Information] Request finished in 4.651ms 200 text/css
+===> 2020-02-05 12:03:13.580 +05:30 [Information] Request finished in 4.64ms 200 application/javascript
+===> 2020-02-05 12:03:13.583 +05:30 [Information] Sending file. Request path: '"/lib/jquery/dist/jquery.min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\jquery\dist\jquery.min.js"'
+===> 2020-02-05 12:03:13.583 +05:30 [Information] Request finished in 7.5129ms 200 application/javascript
+===> 2020-02-05 12:03:13.588 +05:30 [Information] Sending file. Request path: '"/font-awesome/css/all.min.css"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\font-awesome\css\all.min.css"'
+===> 2020-02-05 12:03:13.588 +05:30 [Information] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.min.css"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css"'
+===> 2020-02-05 12:03:13.590 +05:30 [Information] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.bundle.min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js"'
+===> 2020-02-05 12:03:13.595 +05:30 [Information] Request finished in 19.4382ms 200 text/css
+===> 2020-02-05 12:03:13.595 +05:30 [Information] Request finished in 19.9903ms 200 text/css
+===> 2020-02-05 12:03:13.596 +05:30 [Information] Request finished in 19.3766ms 200 application/javascript
+===> 2020-02-05 12:03:13.605 +05:30 [Information] Sending file. Request path: '"/font-awesome/js/all.min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\font-awesome\js\all.min.js"'
+===> 2020-02-05 12:03:13.605 +05:30 [Information] Request finished in 29.8353ms 200 application/javascript
+===> 2020-02-05 12:03:13.627 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/font-awesome/webfonts/fa-solid-900.woff2  
+===> 2020-02-05 12:03:13.630 +05:30 [Information] Sending file. Request path: '"/font-awesome/webfonts/fa-solid-900.woff2"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\font-awesome\webfonts\fa-solid-900.woff2"'
+===> 2020-02-05 12:03:13.630 +05:30 [Information] Request finished in 2.6416ms 200 font/woff2
+===> 2020-02-05 12:03:13.673 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/favicon.ico  
+===> 2020-02-05 12:03:13.684 +05:30 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\favicon.ico"'
+===> 2020-02-05 12:03:13.684 +05:30 [Information] Request finished in 10.9866ms 200 image/x-icon
+===> 2020-02-05 12:03:26.791 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map  
+===> 2020-02-05 12:03:26.795 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/bootstrap/dist/css/bootstrap.min.css.map  
+===> 2020-02-05 12:03:26.813 +05:30 [Information] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map"'
+===> 2020-02-05 12:03:26.813 +05:30 [Information] Request finished in 21.9128ms 200 text/plain
+===> 2020-02-05 12:03:26.816 +05:30 [Information] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.min.css.map"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map"'
+===> 2020-02-05 12:03:26.816 +05:30 [Information] Request finished in 20.6846ms 200 text/plain
+===> 2020-02-05 12:06:07.648 +05:30 [Information] Starting web host
+===> 2020-02-05 12:06:07.732 +05:30 [Information] User profile is available. Using '"C:\Users\ajander\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2020-02-05 12:06:07.741 +05:30 [Debug] Reading data from file '"C:\Users\ajander\AppData\Local\ASP.NET\DataProtection-Keys\key-5262b0a1-0648-4fec-8722-6e1f63d4c4ef.xml"'.
+===> 2020-02-05 12:06:07.759 +05:30 [Debug] Found key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef}.
+===> 2020-02-05 12:06:07.767 +05:30 [Debug] Considering key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} with expiration date 2020-02-10 10:50:23Z as default key.
+===> 2020-02-05 12:06:07.785 +05:30 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-02-05 12:06:07.787 +05:30 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2020-02-05 12:06:07.788 +05:30 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-02-05 12:06:07.791 +05:30 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2020-02-05 12:06:07.792 +05:30 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2020-02-05 12:06:07.795 +05:30 [Debug] Using key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} as the default key.
+===> 2020-02-05 12:06:07.795 +05:30 [Debug] Key ring with default key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} was loaded during application startup.
+===> 2020-02-05 12:06:07.886 +05:30 [Debug] Loaded hosting startup assembly "Bien.WebApp"
+===> 2020-02-05 12:06:07.914 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/  
+===> 2020-02-05 12:06:07.915 +05:30 [Debug] Wildcard detected, all requests with hosts will be allowed.
+===> 2020-02-05 12:06:07.918 +05:30 [Debug] The request path "/" does not match a supported file type
+===> 2020-02-05 12:06:07.923 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Error.cshtml"'.
+===> 2020-02-05 12:06:07.923 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Index.cshtml"'.
+===> 2020-02-05 12:06:07.923 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Privacy.cshtml"'.
+===> 2020-02-05 12:06:07.923 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Shared/_Layout.cshtml"'.
+===> 2020-02-05 12:06:07.923 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Shared/_ValidationScriptsPartial.cshtml"'.
+===> 2020-02-05 12:06:07.923 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/_ViewImports.cshtml"'.
+===> 2020-02-05 12:06:07.923 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/_ViewStart.cshtml"'.
+===> 2020-02-05 12:06:07.933 +05:30 [Debug] 1 candidate(s) found for the request path '"/"'
+===> 2020-02-05 12:06:07.935 +05:30 [Debug] Endpoint '"Page: /Index"' with route pattern '""' is valid for the request path '"/"'
+===> 2020-02-05 12:06:07.964 +05:30 [Debug] Request matched endpoint '"/Index"'
+===> 2020-02-05 12:06:07.966 +05:30 [Debug] The request cannot be served from cache because it contains a 'no-cache' cache directive.
+===> 2020-02-05 12:06:07.981 +05:30 [Information] Executing endpoint '"/Index"'
+===> 2020-02-05 12:06:07.995 +05:30 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+===> 2020-02-05 12:06:08.081 +05:30 [Information] Route matched with "{page = \"/Index\"}". Executing page "/Index"
+===> 2020-02-05 12:06:08.082 +05:30 [Debug] Execution plan of "authorization" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.AutoValidateAntiforgeryTokenAuthorizationFilter"]
+===> 2020-02-05 12:06:08.082 +05:30 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-02-05 12:06:08.082 +05:30 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+===> 2020-02-05 12:06:08.082 +05:30 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-02-05 12:06:08.082 +05:30 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-02-05 12:06:08.085 +05:30 [Debug] Executing page model factory for page "Bien.WebApp.Pages.Pages_Index" ("Bien.WebApp.Views")
+===> 2020-02-05 12:06:08.085 +05:30 [Debug] Executed page model factory for page "Bien.WebApp.Pages.Pages_Index" ("Bien.WebApp.Views")
+===> 2020-02-05 12:06:08.091 +05:30 [Information] Executing handler method "Bien.WebApp.Pages.IndexModel.OnGet" - ModelState is Valid
+===> 2020-02-05 12:06:08.091 +05:30 [Information] Executed handler method "OnGet", returned result "".
+===> 2020-02-05 12:06:08.094 +05:30 [Information] Executing an implicit handler method - ModelState is Valid
+===> 2020-02-05 12:06:08.094 +05:30 [Information] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult".
+===> 2020-02-05 12:06:08.109 +05:30 [Debug] View lookup cache miss for view '"_Layout"' in controller 'null'.
+===> 2020-02-05 12:06:08.148 +05:30 [Debug] Found the endpoints ["Page: /Index"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 12:06:08.155 +05:30 [Debug] Successfully processed template "" for "Page: /Index" resulting in "" and ""
+===> 2020-02-05 12:06:08.155 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Index"] with result "/"
+===> 2020-02-05 12:06:08.157 +05:30 [Debug] Found the endpoints ["Page: /Index"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 12:06:08.157 +05:30 [Debug] Successfully processed template "" for "Page: /Index" resulting in "" and ""
+===> 2020-02-05 12:06:08.157 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Index"] with result "/"
+===> 2020-02-05 12:06:08.158 +05:30 [Debug] Found the endpoints ["Page: /Privacy"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 12:06:08.158 +05:30 [Debug] Successfully processed template "Privacy" for "Page: /Privacy" resulting in "/Privacy" and ""
+===> 2020-02-05 12:06:08.158 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Privacy"] with result "/Privacy"
+===> 2020-02-05 12:06:08.158 +05:30 [Debug] Found the endpoints ["Page: /Privacy"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 12:06:08.159 +05:30 [Debug] Successfully processed template "Privacy" for "Page: /Privacy" resulting in "/Privacy" and ""
+===> 2020-02-05 12:06:08.159 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Privacy"] with result "/Privacy"
+===> 2020-02-05 12:06:08.172 +05:30 [Debug] The response will be compressed with '"br"'.
+===> 2020-02-05 12:06:08.189 +05:30 [Debug] Vary by rules were updated. Headers: "ACCEPT-ENCODING", Query keys: null
+===> 2020-02-05 12:06:08.201 +05:30 [Information] Executed page "/Index" in 115.5797ms
+===> 2020-02-05 12:06:08.202 +05:30 [Information] Executed endpoint '"/Index"'
+===> 2020-02-05 12:06:08.204 +05:30 [Information] The response could not be cached for this request.
+===> 2020-02-05 12:06:08.207 +05:30 [Information] Request finished in 294.8408ms 200 text/html; charset=utf-8
+===> 2020-02-05 12:06:08.218 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18  
+===> 2020-02-05 12:06:08.218 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/jquery/dist/jquery.min.js  
+===> 2020-02-05 12:06:08.218 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/css/site.css  
+===> 2020-02-05 12:06:08.221 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/bootstrap/dist/js/bootstrap.bundle.min.js  
+===> 2020-02-05 12:06:08.221 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/bootstrap/dist/css/bootstrap.min.css  
+===> 2020-02-05 12:06:08.251 +05:30 [Information] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\js\site.js"'
+===> 2020-02-05 12:06:08.251 +05:30 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\css\site.css"'
+===> 2020-02-05 12:06:08.254 +05:30 [Information] Request finished in 35.8689ms 200 text/css
+===> 2020-02-05 12:06:08.254 +05:30 [Information] Request finished in 33.0299ms 200 application/javascript
+===> 2020-02-05 12:06:08.271 +05:30 [Information] Sending file. Request path: '"/lib/jquery/dist/jquery.min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\jquery\dist\jquery.min.js"'
+===> 2020-02-05 12:06:08.271 +05:30 [Information] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.bundle.min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js"'
+===> 2020-02-05 12:06:08.271 +05:30 [Information] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.min.css"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css"'
+===> 2020-02-05 12:06:08.272 +05:30 [Information] Request finished in 54.0577ms 200 application/javascript
+===> 2020-02-05 12:06:08.272 +05:30 [Information] Request finished in 51.3629ms 200 text/css
+===> 2020-02-05 12:06:08.272 +05:30 [Information] Request finished in 54.0642ms 200 application/javascript
+===> 2020-02-05 12:06:48.025 +05:30 [Information] Starting web host
+===> 2020-02-05 12:06:48.107 +05:30 [Information] User profile is available. Using '"C:\Users\ajander\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2020-02-05 12:06:48.116 +05:30 [Debug] Reading data from file '"C:\Users\ajander\AppData\Local\ASP.NET\DataProtection-Keys\key-5262b0a1-0648-4fec-8722-6e1f63d4c4ef.xml"'.
+===> 2020-02-05 12:06:48.135 +05:30 [Debug] Found key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef}.
+===> 2020-02-05 12:06:48.143 +05:30 [Debug] Considering key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} with expiration date 2020-02-10 10:50:23Z as default key.
+===> 2020-02-05 12:06:48.164 +05:30 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-02-05 12:06:48.166 +05:30 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2020-02-05 12:06:48.167 +05:30 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-02-05 12:06:48.170 +05:30 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2020-02-05 12:06:48.172 +05:30 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2020-02-05 12:06:48.174 +05:30 [Debug] Using key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} as the default key.
+===> 2020-02-05 12:06:48.175 +05:30 [Debug] Key ring with default key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} was loaded during application startup.
+===> 2020-02-05 12:06:48.306 +05:30 [Debug] Loaded hosting startup assembly "Bien.WebApp"
+===> 2020-02-05 12:06:48.347 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/  
+===> 2020-02-05 12:06:48.350 +05:30 [Debug] Wildcard detected, all requests with hosts will be allowed.
+===> 2020-02-05 12:06:48.355 +05:30 [Debug] The request path "/" does not match a supported file type
+===> 2020-02-05 12:06:48.363 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Error.cshtml"'.
+===> 2020-02-05 12:06:48.363 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Index.cshtml"'.
+===> 2020-02-05 12:06:48.363 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Privacy.cshtml"'.
+===> 2020-02-05 12:06:48.363 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Shared/_Layout.cshtml"'.
+===> 2020-02-05 12:06:48.363 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Shared/_ValidationScriptsPartial.cshtml"'.
+===> 2020-02-05 12:06:48.363 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/_ViewImports.cshtml"'.
+===> 2020-02-05 12:06:48.363 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/_ViewStart.cshtml"'.
+===> 2020-02-05 12:06:48.374 +05:30 [Debug] 1 candidate(s) found for the request path '"/"'
+===> 2020-02-05 12:06:48.376 +05:30 [Debug] Endpoint '"Page: /Index"' with route pattern '""' is valid for the request path '"/"'
+===> 2020-02-05 12:06:48.403 +05:30 [Debug] Request matched endpoint '"/Index"'
+===> 2020-02-05 12:06:48.405 +05:30 [Debug] The request cannot be served from cache because it contains a 'no-cache' cache directive.
+===> 2020-02-05 12:06:48.419 +05:30 [Information] Executing endpoint '"/Index"'
+===> 2020-02-05 12:06:48.426 +05:30 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+===> 2020-02-05 12:06:48.481 +05:30 [Information] Route matched with "{page = \"/Index\"}". Executing page "/Index"
+===> 2020-02-05 12:06:48.482 +05:30 [Debug] Execution plan of "authorization" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.AutoValidateAntiforgeryTokenAuthorizationFilter"]
+===> 2020-02-05 12:06:48.482 +05:30 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-02-05 12:06:48.482 +05:30 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+===> 2020-02-05 12:06:48.482 +05:30 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-02-05 12:06:48.483 +05:30 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-02-05 12:06:48.485 +05:30 [Debug] Executing page model factory for page "Bien.WebApp.Pages.Pages_Index" ("Bien.WebApp.Views")
+===> 2020-02-05 12:06:48.485 +05:30 [Debug] Executed page model factory for page "Bien.WebApp.Pages.Pages_Index" ("Bien.WebApp.Views")
+===> 2020-02-05 12:06:48.491 +05:30 [Information] Executing handler method "Bien.WebApp.Pages.IndexModel.OnGet" - ModelState is Valid
+===> 2020-02-05 12:06:48.491 +05:30 [Information] Executed handler method "OnGet", returned result "".
+===> 2020-02-05 12:06:48.494 +05:30 [Information] Executing an implicit handler method - ModelState is Valid
+===> 2020-02-05 12:06:48.494 +05:30 [Information] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult".
+===> 2020-02-05 12:06:48.509 +05:30 [Debug] View lookup cache miss for view '"_Layout"' in controller 'null'.
+===> 2020-02-05 12:06:48.546 +05:30 [Debug] Found the endpoints ["Page: /Index"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 12:06:48.553 +05:30 [Debug] Successfully processed template "" for "Page: /Index" resulting in "" and ""
+===> 2020-02-05 12:06:48.554 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Index"] with result "/"
+===> 2020-02-05 12:06:48.555 +05:30 [Debug] Found the endpoints ["Page: /Index"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 12:06:48.556 +05:30 [Debug] Successfully processed template "" for "Page: /Index" resulting in "" and ""
+===> 2020-02-05 12:06:48.560 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Index"] with result "/"
+===> 2020-02-05 12:06:48.561 +05:30 [Debug] Found the endpoints ["Page: /Privacy"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 12:06:48.561 +05:30 [Debug] Successfully processed template "Privacy" for "Page: /Privacy" resulting in "/Privacy" and ""
+===> 2020-02-05 12:06:48.561 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Privacy"] with result "/Privacy"
+===> 2020-02-05 12:06:48.562 +05:30 [Debug] Found the endpoints ["Page: /Privacy"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 12:06:48.562 +05:30 [Debug] Successfully processed template "Privacy" for "Page: /Privacy" resulting in "/Privacy" and ""
+===> 2020-02-05 12:06:48.562 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Privacy"] with result "/Privacy"
+===> 2020-02-05 12:06:48.576 +05:30 [Debug] The response will be compressed with '"br"'.
+===> 2020-02-05 12:06:48.590 +05:30 [Debug] Vary by rules were updated. Headers: "ACCEPT-ENCODING", Query keys: null
+===> 2020-02-05 12:06:48.602 +05:30 [Information] Executed page "/Index" in 115.9355ms
+===> 2020-02-05 12:06:48.603 +05:30 [Information] Executed endpoint '"/Index"'
+===> 2020-02-05 12:06:48.605 +05:30 [Information] The response could not be cached for this request.
+===> 2020-02-05 12:06:48.607 +05:30 [Information] Request finished in 263.564ms 200 text/html; charset=utf-8
+===> 2020-02-05 12:06:48.616 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/bootstrap/dist/css/bootstrap.min.css  
+===> 2020-02-05 12:06:48.616 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/css/site.css  
+===> 2020-02-05 12:06:48.616 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18  
+===> 2020-02-05 12:06:48.616 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/jquery/dist/jquery.min.js  
+===> 2020-02-05 12:06:48.616 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/bootstrap/dist/js/bootstrap.bundle.min.js  
+===> 2020-02-05 12:06:48.635 +05:30 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\css\site.css"'
+===> 2020-02-05 12:06:48.635 +05:30 [Information] Request finished in 19.3747ms 200 text/css
+===> 2020-02-05 12:06:48.638 +05:30 [Information] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\js\site.js"'
+===> 2020-02-05 12:06:48.638 +05:30 [Information] Request finished in 22.4781ms 200 application/javascript
+===> 2020-02-05 12:06:48.672 +05:30 [Information] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.min.css"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css"'
+===> 2020-02-05 12:06:48.675 +05:30 [Information] Sending file. Request path: '"/lib/jquery/dist/jquery.min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\jquery\dist\jquery.min.js"'
+===> 2020-02-05 12:06:48.676 +05:30 [Information] Request finished in 60.1352ms 200 text/css
+===> 2020-02-05 12:06:48.679 +05:30 [Information] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.bundle.min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js"'
+===> 2020-02-05 12:06:48.682 +05:30 [Information] Request finished in 65.8761ms 200 application/javascript
+===> 2020-02-05 12:06:48.682 +05:30 [Information] Request finished in 65.7255ms 200 application/javascript
+===> 2020-02-05 15:43:01.030 +05:30 [Information] Starting web host
+===> 2020-02-05 15:43:01.137 +05:30 [Information] User profile is available. Using '"C:\Users\ajander\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2020-02-05 15:43:01.146 +05:30 [Debug] Reading data from file '"C:\Users\ajander\AppData\Local\ASP.NET\DataProtection-Keys\key-5262b0a1-0648-4fec-8722-6e1f63d4c4ef.xml"'.
+===> 2020-02-05 15:43:01.171 +05:30 [Debug] Found key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef}.
+===> 2020-02-05 15:43:01.179 +05:30 [Debug] Considering key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} with expiration date 2020-02-10 10:50:23Z as default key.
+===> 2020-02-05 15:43:01.198 +05:30 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-02-05 15:43:01.200 +05:30 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2020-02-05 15:43:01.201 +05:30 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-02-05 15:43:01.204 +05:30 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2020-02-05 15:43:01.206 +05:30 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2020-02-05 15:43:01.208 +05:30 [Debug] Using key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} as the default key.
+===> 2020-02-05 15:43:01.208 +05:30 [Debug] Key ring with default key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} was loaded during application startup.
+===> 2020-02-05 15:43:01.414 +05:30 [Debug] Loaded hosting startup assembly "Bien.WebApp"
+===> 2020-02-05 15:43:01.465 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/  
+===> 2020-02-05 15:43:01.467 +05:30 [Debug] Wildcard detected, all requests with hosts will be allowed.
+===> 2020-02-05 15:43:01.470 +05:30 [Debug] The request path "/" does not match a supported file type
+===> 2020-02-05 15:43:01.475 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Error.cshtml"'.
+===> 2020-02-05 15:43:01.475 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Index.cshtml"'.
+===> 2020-02-05 15:43:01.475 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Privacy.cshtml"'.
+===> 2020-02-05 15:43:01.475 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Shared/_Layout.cshtml"'.
+===> 2020-02-05 15:43:01.475 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Shared/_ValidationScriptsPartial.cshtml"'.
+===> 2020-02-05 15:43:01.475 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/_ViewImports.cshtml"'.
+===> 2020-02-05 15:43:01.475 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/_ViewStart.cshtml"'.
+===> 2020-02-05 15:43:01.485 +05:30 [Debug] 1 candidate(s) found for the request path '"/"'
+===> 2020-02-05 15:43:01.487 +05:30 [Debug] Endpoint '"Page: /Index"' with route pattern '""' is valid for the request path '"/"'
+===> 2020-02-05 15:43:01.549 +05:30 [Debug] Request matched endpoint '"/Index"'
+===> 2020-02-05 15:43:01.551 +05:30 [Debug] The request cannot be served from cache because it contains a 'no-cache' cache directive.
+===> 2020-02-05 15:43:01.587 +05:30 [Information] Executing endpoint '"/Index"'
+===> 2020-02-05 15:43:01.594 +05:30 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+===> 2020-02-05 15:43:01.674 +05:30 [Information] Route matched with "{page = \"/Index\"}". Executing page "/Index"
+===> 2020-02-05 15:43:01.674 +05:30 [Debug] Execution plan of "authorization" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.AutoValidateAntiforgeryTokenAuthorizationFilter"]
+===> 2020-02-05 15:43:01.674 +05:30 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-02-05 15:43:01.674 +05:30 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+===> 2020-02-05 15:43:01.674 +05:30 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-02-05 15:43:01.675 +05:30 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-02-05 15:43:01.676 +05:30 [Debug] Executing page model factory for page "Bien.WebApp.Pages.Pages_Index" ("Bien.WebApp.Views")
+===> 2020-02-05 15:43:01.677 +05:30 [Debug] Executed page model factory for page "Bien.WebApp.Pages.Pages_Index" ("Bien.WebApp.Views")
+===> 2020-02-05 15:43:01.683 +05:30 [Information] Executing handler method "Bien.WebApp.Pages.IndexModel.OnGet" - ModelState is Valid
+===> 2020-02-05 15:43:01.683 +05:30 [Information] Executed handler method "OnGet", returned result "".
+===> 2020-02-05 15:43:01.686 +05:30 [Information] Executing an implicit handler method - ModelState is Valid
+===> 2020-02-05 15:43:01.686 +05:30 [Information] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult".
+===> 2020-02-05 15:43:01.701 +05:30 [Debug] View lookup cache miss for view '"_Layout"' in controller 'null'.
+===> 2020-02-05 15:43:01.741 +05:30 [Debug] Found the endpoints ["Page: /Index"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 15:43:01.747 +05:30 [Debug] Successfully processed template "" for "Page: /Index" resulting in "" and ""
+===> 2020-02-05 15:43:01.748 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Index"] with result "/"
+===> 2020-02-05 15:43:01.749 +05:30 [Debug] Found the endpoints ["Page: /Index"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 15:43:01.749 +05:30 [Debug] Successfully processed template "" for "Page: /Index" resulting in "" and ""
+===> 2020-02-05 15:43:01.749 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Index"] with result "/"
+===> 2020-02-05 15:43:01.750 +05:30 [Debug] Found the endpoints ["Page: /Privacy"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 15:43:01.750 +05:30 [Debug] Successfully processed template "Privacy" for "Page: /Privacy" resulting in "/Privacy" and ""
+===> 2020-02-05 15:43:01.750 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Privacy"] with result "/Privacy"
+===> 2020-02-05 15:43:01.751 +05:30 [Debug] Found the endpoints ["Page: /Privacy"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 15:43:01.751 +05:30 [Debug] Successfully processed template "Privacy" for "Page: /Privacy" resulting in "/Privacy" and ""
+===> 2020-02-05 15:43:01.751 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Privacy"] with result "/Privacy"
+===> 2020-02-05 15:43:01.774 +05:30 [Debug] The response will be compressed with '"br"'.
+===> 2020-02-05 15:43:01.813 +05:30 [Debug] Vary by rules were updated. Headers: "ACCEPT-ENCODING", Query keys: null
+===> 2020-02-05 15:43:01.825 +05:30 [Information] Executed page "/Index" in 146.7507ms
+===> 2020-02-05 15:43:01.826 +05:30 [Information] Executed endpoint '"/Index"'
+===> 2020-02-05 15:43:01.827 +05:30 [Information] The response could not be cached for this request.
+===> 2020-02-05 15:43:01.830 +05:30 [Information] Request finished in 367.0971ms 200 text/html; charset=utf-8
+===> 2020-02-05 15:43:01.838 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/bootstrap/dist/css/bootstrap.min.css  
+===> 2020-02-05 15:43:01.838 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/css/site.css  
+===> 2020-02-05 15:43:01.838 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/js/Index.js  
+===> 2020-02-05 15:43:01.838 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18  
+===> 2020-02-05 15:43:01.838 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/jquery/dist/jquery.min.js  
+===> 2020-02-05 15:43:01.843 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/bootstrap/dist/js/bootstrap.bundle.min.js  
+===> 2020-02-05 15:43:01.867 +05:30 [Information] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\js\site.js"'
+===> 2020-02-05 15:43:01.868 +05:30 [Information] Request finished in 29.1748ms 200 application/javascript
+===> 2020-02-05 15:43:01.873 +05:30 [Information] Sending file. Request path: '"/js/Index.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\js\Index.js"'
+===> 2020-02-05 15:43:01.873 +05:30 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\css\site.css"'
+===> 2020-02-05 15:43:01.873 +05:30 [Information] Request finished in 34.4995ms 200 application/javascript
+===> 2020-02-05 15:43:01.873 +05:30 [Information] Request finished in 35.0307ms 200 text/css
+===> 2020-02-05 15:43:01.889 +05:30 [Information] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.min.css"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css"'
+===> 2020-02-05 15:43:01.889 +05:30 [Information] Request finished in 51.4183ms 200 text/css
+===> 2020-02-05 15:43:01.911 +05:30 [Information] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.bundle.min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js"'
+===> 2020-02-05 15:43:01.911 +05:30 [Information] Request finished in 68.6551ms 200 application/javascript
+===> 2020-02-05 15:43:01.924 +05:30 [Information] Sending file. Request path: '"/lib/jquery/dist/jquery.min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\jquery\dist\jquery.min.js"'
+===> 2020-02-05 15:43:01.924 +05:30 [Information] Request finished in 85.2099ms 200 application/javascript
+===> 2020-02-05 16:03:37.936 +05:30 [Information] Starting web host
+===> 2020-02-05 16:03:38.018 +05:30 [Information] User profile is available. Using '"C:\Users\ajander\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2020-02-05 16:03:38.027 +05:30 [Debug] Reading data from file '"C:\Users\ajander\AppData\Local\ASP.NET\DataProtection-Keys\key-5262b0a1-0648-4fec-8722-6e1f63d4c4ef.xml"'.
+===> 2020-02-05 16:03:38.045 +05:30 [Debug] Found key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef}.
+===> 2020-02-05 16:03:38.053 +05:30 [Debug] Considering key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} with expiration date 2020-02-10 10:50:23Z as default key.
+===> 2020-02-05 16:03:38.072 +05:30 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-02-05 16:03:38.074 +05:30 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2020-02-05 16:03:38.075 +05:30 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-02-05 16:03:38.077 +05:30 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2020-02-05 16:03:38.079 +05:30 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2020-02-05 16:03:38.081 +05:30 [Debug] Using key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} as the default key.
+===> 2020-02-05 16:03:38.082 +05:30 [Debug] Key ring with default key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} was loaded during application startup.
+===> 2020-02-05 16:03:38.194 +05:30 [Debug] Loaded hosting startup assembly "Bien.WebApp"
+===> 2020-02-05 16:03:38.222 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/  
+===> 2020-02-05 16:03:38.223 +05:30 [Debug] Wildcard detected, all requests with hosts will be allowed.
+===> 2020-02-05 16:03:38.226 +05:30 [Debug] The request path "/" does not match a supported file type
+===> 2020-02-05 16:03:38.231 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Error.cshtml"'.
+===> 2020-02-05 16:03:38.231 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Index.cshtml"'.
+===> 2020-02-05 16:03:38.231 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Privacy.cshtml"'.
+===> 2020-02-05 16:03:38.231 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Shared/_Layout.cshtml"'.
+===> 2020-02-05 16:03:38.231 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Shared/_ValidationScriptsPartial.cshtml"'.
+===> 2020-02-05 16:03:38.231 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/_ViewImports.cshtml"'.
+===> 2020-02-05 16:03:38.231 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/_ViewStart.cshtml"'.
+===> 2020-02-05 16:03:38.242 +05:30 [Debug] 1 candidate(s) found for the request path '"/"'
+===> 2020-02-05 16:03:38.245 +05:30 [Debug] Endpoint '"Page: /Index"' with route pattern '""' is valid for the request path '"/"'
+===> 2020-02-05 16:03:38.273 +05:30 [Debug] Request matched endpoint '"/Index"'
+===> 2020-02-05 16:03:38.275 +05:30 [Debug] The request cannot be served from cache because it contains a 'no-cache' cache directive.
+===> 2020-02-05 16:03:38.289 +05:30 [Information] Executing endpoint '"/Index"'
+===> 2020-02-05 16:03:38.296 +05:30 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+===> 2020-02-05 16:03:38.372 +05:30 [Information] Route matched with "{page = \"/Index\"}". Executing page "/Index"
+===> 2020-02-05 16:03:38.373 +05:30 [Debug] Execution plan of "authorization" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.AutoValidateAntiforgeryTokenAuthorizationFilter"]
+===> 2020-02-05 16:03:38.373 +05:30 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-02-05 16:03:38.373 +05:30 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+===> 2020-02-05 16:03:38.373 +05:30 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-02-05 16:03:38.373 +05:30 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-02-05 16:03:38.375 +05:30 [Debug] Executing page model factory for page "Bien.WebApp.Pages.Pages_Index" ("Bien.WebApp.Views")
+===> 2020-02-05 16:03:38.376 +05:30 [Debug] Executed page model factory for page "Bien.WebApp.Pages.Pages_Index" ("Bien.WebApp.Views")
+===> 2020-02-05 16:03:38.382 +05:30 [Information] Executing handler method "Bien.WebApp.Pages.IndexModel.OnGet" - ModelState is Valid
+===> 2020-02-05 16:03:38.382 +05:30 [Information] Executed handler method "OnGet", returned result "".
+===> 2020-02-05 16:03:38.386 +05:30 [Information] Executing an implicit handler method - ModelState is Valid
+===> 2020-02-05 16:03:38.386 +05:30 [Information] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult".
+===> 2020-02-05 16:03:38.401 +05:30 [Debug] View lookup cache miss for view '"_Layout"' in controller 'null'.
+===> 2020-02-05 16:03:38.439 +05:30 [Debug] Found the endpoints ["Page: /Index"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 16:03:38.446 +05:30 [Debug] Successfully processed template "" for "Page: /Index" resulting in "" and ""
+===> 2020-02-05 16:03:38.446 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Index"] with result "/"
+===> 2020-02-05 16:03:38.448 +05:30 [Debug] Found the endpoints ["Page: /Index"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 16:03:38.448 +05:30 [Debug] Successfully processed template "" for "Page: /Index" resulting in "" and ""
+===> 2020-02-05 16:03:38.448 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Index"] with result "/"
+===> 2020-02-05 16:03:38.448 +05:30 [Debug] Found the endpoints ["Page: /Privacy"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 16:03:38.449 +05:30 [Debug] Successfully processed template "Privacy" for "Page: /Privacy" resulting in "/Privacy" and ""
+===> 2020-02-05 16:03:38.449 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Privacy"] with result "/Privacy"
+===> 2020-02-05 16:03:38.449 +05:30 [Debug] Found the endpoints ["Page: /Privacy"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 16:03:38.449 +05:30 [Debug] Successfully processed template "Privacy" for "Page: /Privacy" resulting in "/Privacy" and ""
+===> 2020-02-05 16:03:38.449 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Privacy"] with result "/Privacy"
+===> 2020-02-05 16:03:38.468 +05:30 [Debug] The response will be compressed with '"br"'.
+===> 2020-02-05 16:03:38.482 +05:30 [Debug] Vary by rules were updated. Headers: "ACCEPT-ENCODING", Query keys: null
+===> 2020-02-05 16:03:38.497 +05:30 [Information] Executed page "/Index" in 120.2771ms
+===> 2020-02-05 16:03:38.498 +05:30 [Information] Executed endpoint '"/Index"'
+===> 2020-02-05 16:03:38.500 +05:30 [Information] The response could not be cached for this request.
+===> 2020-02-05 16:03:38.503 +05:30 [Information] Request finished in 283.1938ms 200 text/html; charset=utf-8
+===> 2020-02-05 16:03:38.512 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/css/site.css  
+===> 2020-02-05 16:03:38.512 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/bootstrap/dist/css/bootstrap.min.css  
+===> 2020-02-05 16:03:38.512 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18  
+===> 2020-02-05 16:03:38.513 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/js/Index.js  
+===> 2020-02-05 16:03:38.517 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/jquery/dist/jquery.min.js  
+===> 2020-02-05 16:03:38.520 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/bootstrap/dist/js/bootstrap.bundle.min.js  
+===> 2020-02-05 16:03:38.542 +05:30 [Information] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\js\site.js"'
+===> 2020-02-05 16:03:38.542 +05:30 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\css\site.css"'
+===> 2020-02-05 16:03:38.542 +05:30 [Information] Sending file. Request path: '"/js/Index.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\js\Index.js"'
+===> 2020-02-05 16:03:38.542 +05:30 [Information] Request finished in 30.0228ms 200 application/javascript
+===> 2020-02-05 16:03:38.542 +05:30 [Information] Request finished in 30.038ms 200 application/javascript
+===> 2020-02-05 16:03:38.545 +05:30 [Information] Request finished in 30.8974ms 200 text/css
+===> 2020-02-05 16:03:38.578 +05:30 [Information] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.bundle.min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js"'
+===> 2020-02-05 16:03:38.578 +05:30 [Information] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.min.css"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css"'
+===> 2020-02-05 16:03:38.578 +05:30 [Information] Sending file. Request path: '"/lib/jquery/dist/jquery.min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\jquery\dist\jquery.min.js"'
+===> 2020-02-05 16:03:38.579 +05:30 [Information] Request finished in 58.8134ms 200 application/javascript
+===> 2020-02-05 16:03:38.579 +05:30 [Information] Request finished in 62.7276ms 200 application/javascript
+===> 2020-02-05 16:03:38.579 +05:30 [Information] Request finished in 67.5603ms 200 text/css
+===> 2020-02-05 16:03:43.294 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/js/Index.js.map  
+===> 2020-02-05 16:03:43.294 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map  
+===> 2020-02-05 16:03:43.297 +05:30 [Information] The file "/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" was not modified
+===> 2020-02-05 16:03:43.298 +05:30 [Debug] Handled. Status code: 304 File: "/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+===> 2020-02-05 16:03:43.299 +05:30 [Information] Request finished in 5.2523ms 304 text/plain
+===> 2020-02-05 16:03:43.305 +05:30 [Information] Sending file. Request path: '"/js/Index.js.map"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\js\Index.js.map"'
+===> 2020-02-05 16:03:43.305 +05:30 [Information] Request finished in 11.6573ms 200 text/plain
+===> 2020-02-05 16:03:43.310 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/bootstrap/dist/css/bootstrap.min.css.map  
+===> 2020-02-05 16:03:43.310 +05:30 [Information] The file "/lib/bootstrap/dist/css/bootstrap.min.css.map" was not modified
+===> 2020-02-05 16:03:43.310 +05:30 [Debug] Handled. Status code: 304 File: "/lib/bootstrap/dist/css/bootstrap.min.css.map"
+===> 2020-02-05 16:03:43.310 +05:30 [Information] Request finished in 0.7608ms 304 text/plain
+===> 2020-02-05 16:04:17.446 +05:30 [Information] Starting web host
+===> 2020-02-05 16:04:17.526 +05:30 [Information] User profile is available. Using '"C:\Users\ajander\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2020-02-05 16:04:17.535 +05:30 [Debug] Reading data from file '"C:\Users\ajander\AppData\Local\ASP.NET\DataProtection-Keys\key-5262b0a1-0648-4fec-8722-6e1f63d4c4ef.xml"'.
+===> 2020-02-05 16:04:17.553 +05:30 [Debug] Found key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef}.
+===> 2020-02-05 16:04:17.561 +05:30 [Debug] Considering key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} with expiration date 2020-02-10 10:50:23Z as default key.
+===> 2020-02-05 16:04:17.581 +05:30 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-02-05 16:04:17.583 +05:30 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2020-02-05 16:04:17.584 +05:30 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-02-05 16:04:17.587 +05:30 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2020-02-05 16:04:17.589 +05:30 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2020-02-05 16:04:17.591 +05:30 [Debug] Using key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} as the default key.
+===> 2020-02-05 16:04:17.592 +05:30 [Debug] Key ring with default key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} was loaded during application startup.
+===> 2020-02-05 16:04:17.686 +05:30 [Debug] Loaded hosting startup assembly "Bien.WebApp"
+===> 2020-02-05 16:04:17.713 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/  
+===> 2020-02-05 16:04:17.715 +05:30 [Debug] Wildcard detected, all requests with hosts will be allowed.
+===> 2020-02-05 16:04:17.718 +05:30 [Debug] The request path "/" does not match a supported file type
+===> 2020-02-05 16:04:17.723 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Error.cshtml"'.
+===> 2020-02-05 16:04:17.724 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Index.cshtml"'.
+===> 2020-02-05 16:04:17.724 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Privacy.cshtml"'.
+===> 2020-02-05 16:04:17.724 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Shared/_Layout.cshtml"'.
+===> 2020-02-05 16:04:17.724 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Shared/_ValidationScriptsPartial.cshtml"'.
+===> 2020-02-05 16:04:17.724 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/_ViewImports.cshtml"'.
+===> 2020-02-05 16:04:17.724 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/_ViewStart.cshtml"'.
+===> 2020-02-05 16:04:17.734 +05:30 [Debug] 1 candidate(s) found for the request path '"/"'
+===> 2020-02-05 16:04:17.737 +05:30 [Debug] Endpoint '"Page: /Index"' with route pattern '""' is valid for the request path '"/"'
+===> 2020-02-05 16:04:17.768 +05:30 [Debug] Request matched endpoint '"/Index"'
+===> 2020-02-05 16:04:17.770 +05:30 [Debug] The request cannot be served from cache because it contains a 'no-cache' cache directive.
+===> 2020-02-05 16:04:17.787 +05:30 [Information] Executing endpoint '"/Index"'
+===> 2020-02-05 16:04:17.793 +05:30 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+===> 2020-02-05 16:04:17.845 +05:30 [Information] Route matched with "{page = \"/Index\"}". Executing page "/Index"
+===> 2020-02-05 16:04:17.846 +05:30 [Debug] Execution plan of "authorization" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.AutoValidateAntiforgeryTokenAuthorizationFilter"]
+===> 2020-02-05 16:04:17.846 +05:30 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-02-05 16:04:17.846 +05:30 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+===> 2020-02-05 16:04:17.846 +05:30 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-02-05 16:04:17.846 +05:30 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-02-05 16:04:17.848 +05:30 [Debug] Executing page model factory for page "Bien.WebApp.Pages.Pages_Index" ("Bien.WebApp.Views")
+===> 2020-02-05 16:04:17.849 +05:30 [Debug] Executed page model factory for page "Bien.WebApp.Pages.Pages_Index" ("Bien.WebApp.Views")
+===> 2020-02-05 16:04:17.854 +05:30 [Information] Executing handler method "Bien.WebApp.Pages.IndexModel.OnGet" - ModelState is Valid
+===> 2020-02-05 16:04:17.854 +05:30 [Information] Executed handler method "OnGet", returned result "".
+===> 2020-02-05 16:04:17.857 +05:30 [Information] Executing an implicit handler method - ModelState is Valid
+===> 2020-02-05 16:04:17.857 +05:30 [Information] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult".
+===> 2020-02-05 16:04:17.872 +05:30 [Debug] View lookup cache miss for view '"_Layout"' in controller 'null'.
+===> 2020-02-05 16:04:17.909 +05:30 [Debug] Found the endpoints ["Page: /Index"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 16:04:17.917 +05:30 [Debug] Successfully processed template "" for "Page: /Index" resulting in "" and ""
+===> 2020-02-05 16:04:17.917 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Index"] with result "/"
+===> 2020-02-05 16:04:17.920 +05:30 [Debug] Found the endpoints ["Page: /Index"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 16:04:17.923 +05:30 [Debug] Successfully processed template "" for "Page: /Index" resulting in "" and ""
+===> 2020-02-05 16:04:17.923 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Index"] with result "/"
+===> 2020-02-05 16:04:17.924 +05:30 [Debug] Found the endpoints ["Page: /Privacy"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 16:04:17.925 +05:30 [Debug] Successfully processed template "Privacy" for "Page: /Privacy" resulting in "/Privacy" and ""
+===> 2020-02-05 16:04:17.925 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Privacy"] with result "/Privacy"
+===> 2020-02-05 16:04:17.925 +05:30 [Debug] Found the endpoints ["Page: /Privacy"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 16:04:17.925 +05:30 [Debug] Successfully processed template "Privacy" for "Page: /Privacy" resulting in "/Privacy" and ""
+===> 2020-02-05 16:04:17.925 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Privacy"] with result "/Privacy"
+===> 2020-02-05 16:04:17.943 +05:30 [Debug] The response will be compressed with '"br"'.
+===> 2020-02-05 16:04:17.959 +05:30 [Debug] Vary by rules were updated. Headers: "ACCEPT-ENCODING", Query keys: null
+===> 2020-02-05 16:04:17.971 +05:30 [Information] Executed page "/Index" in 121.3402ms
+===> 2020-02-05 16:04:17.972 +05:30 [Information] Executed endpoint '"/Index"'
+===> 2020-02-05 16:04:17.973 +05:30 [Information] The response could not be cached for this request.
+===> 2020-02-05 16:04:17.976 +05:30 [Information] Request finished in 264.7079ms 200 text/html; charset=utf-8
+===> 2020-02-05 16:04:17.984 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/bootstrap/dist/css/bootstrap.min.css  
+===> 2020-02-05 16:04:17.985 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/css/site.css  
+===> 2020-02-05 16:04:17.986 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18  
+===> 2020-02-05 16:04:17.987 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/js/Index.js  
+===> 2020-02-05 16:04:17.986 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/jquery/dist/jquery.min.js  
+===> 2020-02-05 16:04:17.987 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib//knockout//knockout-min.js  
+===> 2020-02-05 16:04:17.998 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/bootstrap/dist/js/bootstrap.bundle.min.js  
+===> 2020-02-05 16:04:18.014 +05:30 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\css\site.css"'
+===> 2020-02-05 16:04:18.014 +05:30 [Information] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\js\site.js"'
+===> 2020-02-05 16:04:18.014 +05:30 [Information] Request finished in 29.275ms 200 text/css
+===> 2020-02-05 16:04:18.018 +05:30 [Information] Request finished in 31.72ms 200 application/javascript
+===> 2020-02-05 16:04:18.023 +05:30 [Information] Sending file. Request path: '"/js/Index.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\js\Index.js"'
+===> 2020-02-05 16:04:18.024 +05:30 [Information] Request finished in 36.9169ms 200 application/javascript
+===> 2020-02-05 16:04:18.046 +05:30 [Information] Sending file. Request path: '"/lib/jquery/dist/jquery.min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\jquery\dist\jquery.min.js"'
+===> 2020-02-05 16:04:18.046 +05:30 [Information] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.min.css"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css"'
+===> 2020-02-05 16:04:18.046 +05:30 [Information] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.bundle.min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js"'
+===> 2020-02-05 16:04:18.049 +05:30 [Information] Request finished in 64.7915ms 200 text/css
+===> 2020-02-05 16:04:18.049 +05:30 [Information] Request finished in 51.155ms 200 application/javascript
+===> 2020-02-05 16:04:18.049 +05:30 [Information] Request finished in 62.3098ms 200 application/javascript
+===> 2020-02-05 16:04:18.067 +05:30 [Information] Sending file. Request path: '"/lib//knockout//knockout-min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\knockout\knockout-min.js"'
+===> 2020-02-05 16:04:18.068 +05:30 [Information] Request finished in 80.4729ms 200 application/javascript
+===> 2020-02-05 16:07:22.684 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/  
+===> 2020-02-05 16:07:22.685 +05:30 [Debug] The request path "/" does not match a supported file type
+===> 2020-02-05 16:07:22.685 +05:30 [Debug] 1 candidate(s) found for the request path '"/"'
+===> 2020-02-05 16:07:22.686 +05:30 [Debug] Endpoint '"Page: /Index"' with route pattern '""' is valid for the request path '"/"'
+===> 2020-02-05 16:07:22.687 +05:30 [Debug] Request matched endpoint '"/Index"'
+===> 2020-02-05 16:07:22.687 +05:30 [Debug] The request cannot be served from cache because it contains a 'no-cache' cache directive.
+===> 2020-02-05 16:07:22.688 +05:30 [Information] Executing endpoint '"/Index"'
+===> 2020-02-05 16:07:22.689 +05:30 [Information] Route matched with "{page = \"/Index\"}". Executing page "/Index"
+===> 2020-02-05 16:07:22.689 +05:30 [Debug] Execution plan of "authorization" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.AutoValidateAntiforgeryTokenAuthorizationFilter"]
+===> 2020-02-05 16:07:22.689 +05:30 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-02-05 16:07:22.689 +05:30 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+===> 2020-02-05 16:07:22.690 +05:30 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-02-05 16:07:22.690 +05:30 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-02-05 16:07:22.693 +05:30 [Debug] Executing page model factory for page "Bien.WebApp.Pages.Pages_Index" ("Bien.WebApp.Views")
+===> 2020-02-05 16:07:22.694 +05:30 [Debug] Executed page model factory for page "Bien.WebApp.Pages.Pages_Index" ("Bien.WebApp.Views")
+===> 2020-02-05 16:07:22.697 +05:30 [Information] Executing handler method "Bien.WebApp.Pages.IndexModel.OnGet" - ModelState is Valid
+===> 2020-02-05 16:07:22.697 +05:30 [Information] Executed handler method "OnGet", returned result "".
+===> 2020-02-05 16:07:22.697 +05:30 [Information] Executing an implicit handler method - ModelState is Valid
+===> 2020-02-05 16:07:22.697 +05:30 [Information] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult".
+===> 2020-02-05 16:07:22.701 +05:30 [Debug] View lookup cache hit for view '"_Layout"' in controller 'null'.
+===> 2020-02-05 16:07:22.706 +05:30 [Debug] Found the endpoints ["Page: /Index"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 16:07:22.707 +05:30 [Debug] Successfully processed template "" for "Page: /Index" resulting in "" and ""
+===> 2020-02-05 16:07:22.707 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Index"] with result "/"
+===> 2020-02-05 16:07:22.707 +05:30 [Debug] Found the endpoints ["Page: /Index"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 16:07:22.707 +05:30 [Debug] Successfully processed template "" for "Page: /Index" resulting in "" and ""
+===> 2020-02-05 16:07:22.707 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Index"] with result "/"
+===> 2020-02-05 16:07:22.707 +05:30 [Debug] Found the endpoints ["Page: /Privacy"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 16:07:22.707 +05:30 [Debug] Successfully processed template "Privacy" for "Page: /Privacy" resulting in "/Privacy" and ""
+===> 2020-02-05 16:07:22.707 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Privacy"] with result "/Privacy"
+===> 2020-02-05 16:07:22.707 +05:30 [Debug] Found the endpoints ["Page: /Privacy"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 16:07:22.707 +05:30 [Debug] Successfully processed template "Privacy" for "Page: /Privacy" resulting in "/Privacy" and ""
+===> 2020-02-05 16:07:22.707 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Privacy"] with result "/Privacy"
+===> 2020-02-05 16:07:22.716 +05:30 [Debug] The response will be compressed with '"br"'.
+===> 2020-02-05 16:07:22.716 +05:30 [Debug] Vary by rules were updated. Headers: "ACCEPT-ENCODING", Query keys: null
+===> 2020-02-05 16:07:22.718 +05:30 [Information] Executed page "/Index" in 24.969ms
+===> 2020-02-05 16:07:22.722 +05:30 [Information] Executed endpoint '"/Index"'
+===> 2020-02-05 16:07:22.722 +05:30 [Information] The response could not be cached for this request.
+===> 2020-02-05 16:07:22.722 +05:30 [Information] Request finished in 42.8378ms 200 text/html; charset=utf-8
+===> 2020-02-05 16:07:22.732 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/bootstrap/dist/css/bootstrap.min.css  
+===> 2020-02-05 16:07:22.733 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/css/site.css  
+===> 2020-02-05 16:07:22.734 +05:30 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\css\site.css"'
+===> 2020-02-05 16:07:22.734 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/jquery/dist/jquery.min.js  
+===> 2020-02-05 16:07:22.734 +05:30 [Information] Request finished in 1.6385ms 200 text/css
+===> 2020-02-05 16:07:22.735 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/js/Index.js  
+===> 2020-02-05 16:07:22.735 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib//knockout//knockout-min.js  
+===> 2020-02-05 16:07:22.736 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18  
+===> 2020-02-05 16:07:22.737 +05:30 [Information] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.min.css"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css"'
+===> 2020-02-05 16:07:22.737 +05:30 [Information] Sending file. Request path: '"/js/Index.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\js\Index.js"'
+===> 2020-02-05 16:07:22.738 +05:30 [Information] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\js\site.js"'
+===> 2020-02-05 16:07:22.738 +05:30 [Information] Request finished in 3.216ms 200 application/javascript
+===> 2020-02-05 16:07:22.738 +05:30 [Information] Request finished in 2.826ms 200 application/javascript
+===> 2020-02-05 16:07:22.738 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/bootstrap/dist/js/bootstrap.bundle.min.js  
+===> 2020-02-05 16:07:22.738 +05:30 [Information] Request finished in 6.0216ms 200 text/css
+===> 2020-02-05 16:07:22.747 +05:30 [Information] Sending file. Request path: '"/lib//knockout//knockout-min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\knockout\knockout-min.js"'
+===> 2020-02-05 16:07:22.749 +05:30 [Information] Sending file. Request path: '"/lib/jquery/dist/jquery.min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\jquery\dist\jquery.min.js"'
+===> 2020-02-05 16:07:22.751 +05:30 [Information] Request finished in 16.4ms 200 application/javascript
+===> 2020-02-05 16:07:22.758 +05:30 [Information] Request finished in 22.5042ms 200 application/javascript
+===> 2020-02-05 16:07:22.763 +05:30 [Information] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.bundle.min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js"'
+===> 2020-02-05 16:07:22.763 +05:30 [Information] Request finished in 25.0595ms 200 application/javascript
+===> 2020-02-05 16:07:23.646 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/favicon.ico  
+===> 2020-02-05 16:07:23.662 +05:30 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\favicon.ico"'
+===> 2020-02-05 16:07:23.662 +05:30 [Information] Request finished in 16.679ms 200 image/x-icon
+===> 2020-02-05 16:07:45.337 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/  
+===> 2020-02-05 16:07:45.338 +05:30 [Debug] The request path "/" does not match a supported file type
+===> 2020-02-05 16:07:45.338 +05:30 [Debug] 1 candidate(s) found for the request path '"/"'
+===> 2020-02-05 16:07:45.338 +05:30 [Debug] Endpoint '"Page: /Index"' with route pattern '""' is valid for the request path '"/"'
+===> 2020-02-05 16:07:45.338 +05:30 [Debug] Request matched endpoint '"/Index"'
+===> 2020-02-05 16:07:45.338 +05:30 [Debug] The request cannot be served from cache because it contains a 'no-cache' cache directive.
+===> 2020-02-05 16:07:45.339 +05:30 [Information] Executing endpoint '"/Index"'
+===> 2020-02-05 16:07:45.339 +05:30 [Information] Route matched with "{page = \"/Index\"}". Executing page "/Index"
+===> 2020-02-05 16:07:45.340 +05:30 [Debug] Execution plan of "authorization" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.AutoValidateAntiforgeryTokenAuthorizationFilter"]
+===> 2020-02-05 16:07:45.340 +05:30 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-02-05 16:07:45.340 +05:30 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+===> 2020-02-05 16:07:45.340 +05:30 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-02-05 16:07:45.340 +05:30 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-02-05 16:07:45.340 +05:30 [Debug] Executing page model factory for page "Bien.WebApp.Pages.Pages_Index" ("Bien.WebApp.Views")
+===> 2020-02-05 16:07:45.340 +05:30 [Debug] Executed page model factory for page "Bien.WebApp.Pages.Pages_Index" ("Bien.WebApp.Views")
+===> 2020-02-05 16:07:45.341 +05:30 [Information] Executing handler method "Bien.WebApp.Pages.IndexModel.OnGet" - ModelState is Valid
+===> 2020-02-05 16:07:45.341 +05:30 [Information] Executed handler method "OnGet", returned result "".
+===> 2020-02-05 16:07:45.341 +05:30 [Information] Executing an implicit handler method - ModelState is Valid
+===> 2020-02-05 16:07:45.341 +05:30 [Information] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult".
+===> 2020-02-05 16:07:45.343 +05:30 [Debug] View lookup cache hit for view '"_Layout"' in controller 'null'.
+===> 2020-02-05 16:07:45.344 +05:30 [Debug] Found the endpoints ["Page: /Index"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 16:07:45.344 +05:30 [Debug] Successfully processed template "" for "Page: /Index" resulting in "" and ""
+===> 2020-02-05 16:07:45.344 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Index"] with result "/"
+===> 2020-02-05 16:07:45.344 +05:30 [Debug] Found the endpoints ["Page: /Index"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 16:07:45.344 +05:30 [Debug] Successfully processed template "" for "Page: /Index" resulting in "" and ""
+===> 2020-02-05 16:07:45.344 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Index"] with result "/"
+===> 2020-02-05 16:07:45.344 +05:30 [Debug] Found the endpoints ["Page: /Privacy"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 16:07:45.344 +05:30 [Debug] Successfully processed template "Privacy" for "Page: /Privacy" resulting in "/Privacy" and ""
+===> 2020-02-05 16:07:45.344 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Privacy"] with result "/Privacy"
+===> 2020-02-05 16:07:45.344 +05:30 [Debug] Found the endpoints ["Page: /Privacy"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 16:07:45.344 +05:30 [Debug] Successfully processed template "Privacy" for "Page: /Privacy" resulting in "/Privacy" and ""
+===> 2020-02-05 16:07:45.344 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Privacy"] with result "/Privacy"
+===> 2020-02-05 16:07:45.345 +05:30 [Debug] The response will be compressed with '"br"'.
+===> 2020-02-05 16:07:45.345 +05:30 [Debug] Vary by rules were updated. Headers: "ACCEPT-ENCODING", Query keys: null
+===> 2020-02-05 16:07:45.346 +05:30 [Information] Executed page "/Index" in 5.5925ms
+===> 2020-02-05 16:07:45.346 +05:30 [Information] Executed endpoint '"/Index"'
+===> 2020-02-05 16:07:45.346 +05:30 [Information] The response could not be cached for this request.
+===> 2020-02-05 16:07:45.346 +05:30 [Information] Request finished in 9.4602ms 200 text/html; charset=utf-8
+===> 2020-02-05 16:07:45.357 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/bootstrap/dist/css/bootstrap.min.css  
+===> 2020-02-05 16:07:45.358 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/css/site.css  
+===> 2020-02-05 16:07:45.358 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/jquery/dist/jquery.min.js  
+===> 2020-02-05 16:07:45.359 +05:30 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\css\site.css"'
+===> 2020-02-05 16:07:45.360 +05:30 [Information] Request finished in 1.7117ms 200 text/css
+===> 2020-02-05 16:07:45.361 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/js/Index.js  
+===> 2020-02-05 16:07:45.361 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib//knockout//knockout-min.js  
+===> 2020-02-05 16:07:45.361 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18  
+===> 2020-02-05 16:07:45.366 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/bootstrap/dist/js/bootstrap.bundle.min.js  
+===> 2020-02-05 16:07:45.389 +05:30 [Information] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\js\site.js"'
+===> 2020-02-05 16:07:45.393 +05:30 [Information] Request finished in 31.6452ms 200 application/javascript
+===> 2020-02-05 16:07:45.402 +05:30 [Information] Sending file. Request path: '"/lib//knockout//knockout-min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\knockout\knockout-min.js"'
+===> 2020-02-05 16:07:45.422 +05:30 [Information] Request finished in 61.0497ms 200 application/javascript
+===> 2020-02-05 16:07:45.431 +05:30 [Information] Sending file. Request path: '"/js/Index.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\js\Index.js"'
+===> 2020-02-05 16:07:45.433 +05:30 [Information] Request finished in 71.5199ms 200 application/javascript
+===> 2020-02-05 16:07:45.437 +05:30 [Information] Sending file. Request path: '"/lib/jquery/dist/jquery.min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\jquery\dist\jquery.min.js"'
+===> 2020-02-05 16:07:45.437 +05:30 [Information] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.min.css"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css"'
+===> 2020-02-05 16:07:45.437 +05:30 [Information] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.bundle.min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js"'
+===> 2020-02-05 16:07:45.437 +05:30 [Information] Request finished in 79.2886ms 200 application/javascript
+===> 2020-02-05 16:07:45.438 +05:30 [Information] Request finished in 80.2198ms 200 text/css
+===> 2020-02-05 16:07:45.438 +05:30 [Information] Request finished in 74.6513ms 200 application/javascript
+===> 2020-02-05 16:07:45.767 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/favicon.ico  
+===> 2020-02-05 16:07:45.779 +05:30 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\favicon.ico"'
+===> 2020-02-05 16:07:45.779 +05:30 [Information] Request finished in 12.7966ms 200 image/x-icon
+===> 2020-02-05 16:07:58.841 +05:30 [Information] Starting web host
+===> 2020-02-05 16:07:58.924 +05:30 [Information] User profile is available. Using '"C:\Users\ajander\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2020-02-05 16:07:58.932 +05:30 [Debug] Reading data from file '"C:\Users\ajander\AppData\Local\ASP.NET\DataProtection-Keys\key-5262b0a1-0648-4fec-8722-6e1f63d4c4ef.xml"'.
+===> 2020-02-05 16:07:58.951 +05:30 [Debug] Found key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef}.
+===> 2020-02-05 16:07:58.960 +05:30 [Debug] Considering key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} with expiration date 2020-02-10 10:50:23Z as default key.
+===> 2020-02-05 16:07:58.978 +05:30 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-02-05 16:07:58.980 +05:30 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2020-02-05 16:07:58.981 +05:30 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-02-05 16:07:58.984 +05:30 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2020-02-05 16:07:58.985 +05:30 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2020-02-05 16:07:58.988 +05:30 [Debug] Using key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} as the default key.
+===> 2020-02-05 16:07:58.988 +05:30 [Debug] Key ring with default key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} was loaded during application startup.
+===> 2020-02-05 16:07:59.073 +05:30 [Debug] Loaded hosting startup assembly "Bien.WebApp"
+===> 2020-02-05 16:07:59.100 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/  
+===> 2020-02-05 16:07:59.102 +05:30 [Debug] Wildcard detected, all requests with hosts will be allowed.
+===> 2020-02-05 16:07:59.104 +05:30 [Debug] The request path "/" does not match a supported file type
+===> 2020-02-05 16:07:59.109 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Error.cshtml"'.
+===> 2020-02-05 16:07:59.109 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Index.cshtml"'.
+===> 2020-02-05 16:07:59.109 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Privacy.cshtml"'.
+===> 2020-02-05 16:07:59.109 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Shared/_Layout.cshtml"'.
+===> 2020-02-05 16:07:59.109 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Shared/_ValidationScriptsPartial.cshtml"'.
+===> 2020-02-05 16:07:59.110 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/_ViewImports.cshtml"'.
+===> 2020-02-05 16:07:59.110 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/_ViewStart.cshtml"'.
+===> 2020-02-05 16:07:59.120 +05:30 [Debug] 1 candidate(s) found for the request path '"/"'
+===> 2020-02-05 16:07:59.122 +05:30 [Debug] Endpoint '"Page: /Index"' with route pattern '""' is valid for the request path '"/"'
+===> 2020-02-05 16:07:59.148 +05:30 [Debug] Request matched endpoint '"/Index"'
+===> 2020-02-05 16:07:59.150 +05:30 [Debug] The request cannot be served from cache because it contains a 'no-cache' cache directive.
+===> 2020-02-05 16:07:59.179 +05:30 [Information] Executing endpoint '"/Index"'
+===> 2020-02-05 16:07:59.191 +05:30 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+===> 2020-02-05 16:07:59.249 +05:30 [Information] Route matched with "{page = \"/Index\"}". Executing page "/Index"
+===> 2020-02-05 16:07:59.250 +05:30 [Debug] Execution plan of "authorization" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.AutoValidateAntiforgeryTokenAuthorizationFilter"]
+===> 2020-02-05 16:07:59.250 +05:30 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-02-05 16:07:59.250 +05:30 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+===> 2020-02-05 16:07:59.250 +05:30 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-02-05 16:07:59.250 +05:30 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-02-05 16:07:59.252 +05:30 [Debug] Executing page model factory for page "Bien.WebApp.Pages.Pages_Index" ("Bien.WebApp.Views")
+===> 2020-02-05 16:07:59.253 +05:30 [Debug] Executed page model factory for page "Bien.WebApp.Pages.Pages_Index" ("Bien.WebApp.Views")
+===> 2020-02-05 16:07:59.258 +05:30 [Information] Executing handler method "Bien.WebApp.Pages.IndexModel.OnGet" - ModelState is Valid
+===> 2020-02-05 16:07:59.259 +05:30 [Information] Executed handler method "OnGet", returned result "".
+===> 2020-02-05 16:07:59.262 +05:30 [Information] Executing an implicit handler method - ModelState is Valid
+===> 2020-02-05 16:07:59.262 +05:30 [Information] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult".
+===> 2020-02-05 16:07:59.276 +05:30 [Debug] View lookup cache miss for view '"_Layout"' in controller 'null'.
+===> 2020-02-05 16:07:59.309 +05:30 [Debug] Found the endpoints ["Page: /Index"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 16:07:59.315 +05:30 [Debug] Successfully processed template "" for "Page: /Index" resulting in "" and ""
+===> 2020-02-05 16:07:59.316 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Index"] with result "/"
+===> 2020-02-05 16:07:59.317 +05:30 [Debug] Found the endpoints ["Page: /Index"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 16:07:59.318 +05:30 [Debug] Successfully processed template "" for "Page: /Index" resulting in "" and ""
+===> 2020-02-05 16:07:59.318 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Index"] with result "/"
+===> 2020-02-05 16:07:59.321 +05:30 [Debug] Found the endpoints ["Page: /Privacy"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 16:07:59.321 +05:30 [Debug] Successfully processed template "Privacy" for "Page: /Privacy" resulting in "/Privacy" and ""
+===> 2020-02-05 16:07:59.321 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Privacy"] with result "/Privacy"
+===> 2020-02-05 16:07:59.322 +05:30 [Debug] Found the endpoints ["Page: /Privacy"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 16:07:59.322 +05:30 [Debug] Successfully processed template "Privacy" for "Page: /Privacy" resulting in "/Privacy" and ""
+===> 2020-02-05 16:07:59.322 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Privacy"] with result "/Privacy"
+===> 2020-02-05 16:07:59.343 +05:30 [Debug] The response will be compressed with '"br"'.
+===> 2020-02-05 16:07:59.379 +05:30 [Debug] Vary by rules were updated. Headers: "ACCEPT-ENCODING", Query keys: null
+===> 2020-02-05 16:07:59.408 +05:30 [Information] Executed page "/Index" in 153.3781ms
+===> 2020-02-05 16:07:59.409 +05:30 [Information] Executed endpoint '"/Index"'
+===> 2020-02-05 16:07:59.411 +05:30 [Information] The response could not be cached for this request.
+===> 2020-02-05 16:07:59.414 +05:30 [Information] Request finished in 315.7948ms 200 text/html; charset=utf-8
+===> 2020-02-05 16:07:59.422 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/bootstrap/dist/css/bootstrap.min.css  
+===> 2020-02-05 16:07:59.423 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/css/site.css  
+===> 2020-02-05 16:07:59.423 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18  
+===> 2020-02-05 16:07:59.424 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/jquery/dist/jquery.min.js  
+===> 2020-02-05 16:07:59.424 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/js/Index.js  
+===> 2020-02-05 16:07:59.429 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/js/http/HomePageService.js  
+===> 2020-02-05 16:07:59.436 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/js/http/HttpFetchService.js  
+===> 2020-02-05 16:07:59.441 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/bootstrap/dist/js/bootstrap.bundle.min.js  
+===> 2020-02-05 16:07:59.445 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib//knockout//knockout-min.js  
+===> 2020-02-05 16:07:59.461 +05:30 [Information] Sending file. Request path: '"/js/Index.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\js\Index.js"'
+===> 2020-02-05 16:07:59.461 +05:30 [Information] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\js\site.js"'
+===> 2020-02-05 16:07:59.461 +05:30 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\css\site.css"'
+===> 2020-02-05 16:07:59.462 +05:30 [Information] Request finished in 39.09ms 200 text/css
+===> 2020-02-05 16:07:59.462 +05:30 [Information] Request finished in 37.9828ms 200 application/javascript
+===> 2020-02-05 16:07:59.462 +05:30 [Information] Request finished in 38.6115ms 200 application/javascript
+===> 2020-02-05 16:07:59.482 +05:30 [Information] Sending file. Request path: '"/js/http/HttpFetchService.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\js\http\HttpFetchService.js"'
+===> 2020-02-05 16:07:59.483 +05:30 [Information] Request finished in 47.3659ms 200 application/javascript
+===> 2020-02-05 16:07:59.484 +05:30 [Information] Sending file. Request path: '"/js/http/HomePageService.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\js\http\HomePageService.js"'
+===> 2020-02-05 16:07:59.484 +05:30 [Information] Request finished in 55.6012ms 200 application/javascript
+===> 2020-02-05 16:07:59.495 +05:30 [Information] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.bundle.min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js"'
+===> 2020-02-05 16:07:59.495 +05:30 [Information] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.min.css"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css"'
+===> 2020-02-05 16:07:59.495 +05:30 [Information] Sending file. Request path: '"/lib//knockout//knockout-min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\knockout\knockout-min.js"'
+===> 2020-02-05 16:07:59.495 +05:30 [Information] Sending file. Request path: '"/lib/jquery/dist/jquery.min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\jquery\dist\jquery.min.js"'
+===> 2020-02-05 16:07:59.497 +05:30 [Information] Request finished in 51.81ms 200 application/javascript
+===> 2020-02-05 16:07:59.497 +05:30 [Information] Request finished in 75.593ms 200 text/css
+===> 2020-02-05 16:07:59.497 +05:30 [Information] Request finished in 56.3761ms 200 application/javascript
+===> 2020-02-05 16:07:59.497 +05:30 [Information] Request finished in 73.6823ms 200 application/javascript
+===> 2020-02-05 16:08:02.935 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/js/http/HttpFetchService.js.map  
+===> 2020-02-05 16:08:02.936 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/js/http/HomePageService.js.map  
+===> 2020-02-05 16:08:02.945 +05:30 [Information] Sending file. Request path: '"/js/http/HttpFetchService.js.map"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\js\http\HttpFetchService.js.map"'
+===> 2020-02-05 16:08:02.946 +05:30 [Information] Sending file. Request path: '"/js/http/HomePageService.js.map"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\js\http\HomePageService.js.map"'
+===> 2020-02-05 16:08:02.946 +05:30 [Information] Request finished in 11.7224ms 200 text/plain
+===> 2020-02-05 16:08:02.946 +05:30 [Information] Request finished in 10.7284ms 200 text/plain
+===> 2020-02-05 16:16:37.112 +05:30 [Information] Starting web host
+===> 2020-02-05 16:16:37.198 +05:30 [Information] User profile is available. Using '"C:\Users\ajander\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2020-02-05 16:16:37.207 +05:30 [Debug] Reading data from file '"C:\Users\ajander\AppData\Local\ASP.NET\DataProtection-Keys\key-5262b0a1-0648-4fec-8722-6e1f63d4c4ef.xml"'.
+===> 2020-02-05 16:16:37.226 +05:30 [Debug] Found key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef}.
+===> 2020-02-05 16:16:37.234 +05:30 [Debug] Considering key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} with expiration date 2020-02-10 10:50:23Z as default key.
+===> 2020-02-05 16:16:37.253 +05:30 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-02-05 16:16:37.254 +05:30 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2020-02-05 16:16:37.255 +05:30 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-02-05 16:16:37.258 +05:30 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2020-02-05 16:16:37.260 +05:30 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2020-02-05 16:16:37.262 +05:30 [Debug] Using key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} as the default key.
+===> 2020-02-05 16:16:37.262 +05:30 [Debug] Key ring with default key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} was loaded during application startup.
+===> 2020-02-05 16:16:37.355 +05:30 [Debug] Loaded hosting startup assembly "Bien.WebApp"
+===> 2020-02-05 16:16:37.382 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/  
+===> 2020-02-05 16:16:37.383 +05:30 [Debug] Wildcard detected, all requests with hosts will be allowed.
+===> 2020-02-05 16:16:37.386 +05:30 [Debug] The request path "/" does not match a supported file type
+===> 2020-02-05 16:16:37.391 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Error.cshtml"'.
+===> 2020-02-05 16:16:37.391 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Index.cshtml"'.
+===> 2020-02-05 16:16:37.391 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Privacy.cshtml"'.
+===> 2020-02-05 16:16:37.391 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Shared/_Layout.cshtml"'.
+===> 2020-02-05 16:16:37.391 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Shared/_ValidationScriptsPartial.cshtml"'.
+===> 2020-02-05 16:16:37.391 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/_ViewImports.cshtml"'.
+===> 2020-02-05 16:16:37.391 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/_ViewStart.cshtml"'.
+===> 2020-02-05 16:16:37.402 +05:30 [Debug] 1 candidate(s) found for the request path '"/"'
+===> 2020-02-05 16:16:37.405 +05:30 [Debug] Endpoint '"Page: /Index"' with route pattern '""' is valid for the request path '"/"'
+===> 2020-02-05 16:16:37.445 +05:30 [Debug] Request matched endpoint '"/Index"'
+===> 2020-02-05 16:16:37.447 +05:30 [Debug] The request cannot be served from cache because it contains a 'no-cache' cache directive.
+===> 2020-02-05 16:16:37.462 +05:30 [Information] Executing endpoint '"/Index"'
+===> 2020-02-05 16:16:37.468 +05:30 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+===> 2020-02-05 16:16:37.522 +05:30 [Information] Route matched with "{page = \"/Index\"}". Executing page "/Index"
+===> 2020-02-05 16:16:37.523 +05:30 [Debug] Execution plan of "authorization" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.AutoValidateAntiforgeryTokenAuthorizationFilter"]
+===> 2020-02-05 16:16:37.523 +05:30 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-02-05 16:16:37.523 +05:30 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+===> 2020-02-05 16:16:37.523 +05:30 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-02-05 16:16:37.524 +05:30 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-02-05 16:16:37.526 +05:30 [Debug] Executing page model factory for page "Bien.WebApp.Pages.Pages_Index" ("Bien.WebApp.Views")
+===> 2020-02-05 16:16:37.526 +05:30 [Debug] Executed page model factory for page "Bien.WebApp.Pages.Pages_Index" ("Bien.WebApp.Views")
+===> 2020-02-05 16:16:37.532 +05:30 [Information] Executing handler method "Bien.WebApp.Pages.IndexModel.OnGet" - ModelState is Valid
+===> 2020-02-05 16:16:37.532 +05:30 [Information] Executed handler method "OnGet", returned result "".
+===> 2020-02-05 16:16:37.535 +05:30 [Information] Executing an implicit handler method - ModelState is Valid
+===> 2020-02-05 16:16:37.535 +05:30 [Information] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult".
+===> 2020-02-05 16:16:37.550 +05:30 [Debug] View lookup cache miss for view '"_Layout"' in controller 'null'.
+===> 2020-02-05 16:16:37.583 +05:30 [Debug] Found the endpoints ["Page: /Index"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 16:16:37.590 +05:30 [Debug] Successfully processed template "" for "Page: /Index" resulting in "" and ""
+===> 2020-02-05 16:16:37.590 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Index"] with result "/"
+===> 2020-02-05 16:16:37.591 +05:30 [Debug] Found the endpoints ["Page: /Index"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 16:16:37.591 +05:30 [Debug] Successfully processed template "" for "Page: /Index" resulting in "" and ""
+===> 2020-02-05 16:16:37.592 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Index"] with result "/"
+===> 2020-02-05 16:16:37.592 +05:30 [Debug] Found the endpoints ["Page: /Privacy"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 16:16:37.592 +05:30 [Debug] Successfully processed template "Privacy" for "Page: /Privacy" resulting in "/Privacy" and ""
+===> 2020-02-05 16:16:37.593 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Privacy"] with result "/Privacy"
+===> 2020-02-05 16:16:37.593 +05:30 [Debug] Found the endpoints ["Page: /Privacy"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 16:16:37.593 +05:30 [Debug] Successfully processed template "Privacy" for "Page: /Privacy" resulting in "/Privacy" and ""
+===> 2020-02-05 16:16:37.593 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Privacy"] with result "/Privacy"
+===> 2020-02-05 16:16:37.617 +05:30 [Debug] The response will be compressed with '"br"'.
+===> 2020-02-05 16:16:37.631 +05:30 [Debug] Vary by rules were updated. Headers: "ACCEPT-ENCODING", Query keys: null
+===> 2020-02-05 16:16:37.644 +05:30 [Information] Executed page "/Index" in 116.9923ms
+===> 2020-02-05 16:16:37.645 +05:30 [Information] Executed endpoint '"/Index"'
+===> 2020-02-05 16:16:37.647 +05:30 [Information] The response could not be cached for this request.
+===> 2020-02-05 16:16:37.649 +05:30 [Information] Request finished in 270.0702ms 200 text/html; charset=utf-8
+===> 2020-02-05 16:16:37.658 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/css/site.css  
+===> 2020-02-05 16:16:37.659 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/bootstrap/dist/css/bootstrap.min.css  
+===> 2020-02-05 16:16:37.659 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/jquery/dist/jquery.min.js  
+===> 2020-02-05 16:16:37.663 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib//knockout//knockout-min.js  
+===> 2020-02-05 16:16:37.664 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/js/http/HttpFetchService.js  
+===> 2020-02-05 16:16:37.664 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/bootstrap/dist/js/bootstrap.bundle.min.js  
+===> 2020-02-05 16:16:37.668 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/js/http/HomePageService.js  
+===> 2020-02-05 16:16:37.683 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/js/Index.js  
+===> 2020-02-05 16:16:37.683 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18  
+===> 2020-02-05 16:16:37.706 +05:30 [Information] Sending file. Request path: '"/js/http/HomePageService.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\js\http\HomePageService.js"'
+===> 2020-02-05 16:16:37.706 +05:30 [Information] Request finished in 37.6309ms 200 application/javascript
+===> 2020-02-05 16:16:37.717 +05:30 [Information] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\js\site.js"'
+===> 2020-02-05 16:16:37.717 +05:30 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\css\site.css"'
+===> 2020-02-05 16:16:37.717 +05:30 [Information] Sending file. Request path: '"/js/Index.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\js\Index.js"'
+===> 2020-02-05 16:16:37.717 +05:30 [Information] Sending file. Request path: '"/js/http/HttpFetchService.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\js\http\HttpFetchService.js"'
+===> 2020-02-05 16:16:37.717 +05:30 [Information] Request finished in 58.8476ms 200 text/css
+===> 2020-02-05 16:16:37.717 +05:30 [Information] Request finished in 34.7518ms 200 application/javascript
+===> 2020-02-05 16:16:37.717 +05:30 [Information] Request finished in 34.795ms 200 application/javascript
+===> 2020-02-05 16:16:37.717 +05:30 [Information] Request finished in 53.8128ms 200 application/javascript
+===> 2020-02-05 16:16:37.739 +05:30 [Information] Sending file. Request path: '"/lib//knockout//knockout-min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\knockout\knockout-min.js"'
+===> 2020-02-05 16:16:37.739 +05:30 [Information] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.bundle.min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js"'
+===> 2020-02-05 16:16:37.739 +05:30 [Information] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.min.css"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css"'
+===> 2020-02-05 16:16:37.739 +05:30 [Information] Sending file. Request path: '"/lib/jquery/dist/jquery.min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\jquery\dist\jquery.min.js"'
+===> 2020-02-05 16:16:37.742 +05:30 [Information] Request finished in 83.5516ms 200 application/javascript
+===> 2020-02-05 16:16:37.742 +05:30 [Information] Request finished in 83.5166ms 200 text/css
+===> 2020-02-05 16:16:37.742 +05:30 [Information] Request finished in 78.69ms 200 application/javascript
+===> 2020-02-05 16:16:37.742 +05:30 [Information] Request finished in 78.9679ms 200 application/javascript
+===> 2020-02-05 16:19:32.329 +05:30 [Information] Starting web host
+===> 2020-02-05 16:19:32.414 +05:30 [Information] User profile is available. Using '"C:\Users\ajander\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2020-02-05 16:19:32.423 +05:30 [Debug] Reading data from file '"C:\Users\ajander\AppData\Local\ASP.NET\DataProtection-Keys\key-5262b0a1-0648-4fec-8722-6e1f63d4c4ef.xml"'.
+===> 2020-02-05 16:19:32.443 +05:30 [Debug] Found key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef}.
+===> 2020-02-05 16:19:32.450 +05:30 [Debug] Considering key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} with expiration date 2020-02-10 10:50:23Z as default key.
+===> 2020-02-05 16:19:32.472 +05:30 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-02-05 16:19:32.474 +05:30 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2020-02-05 16:19:32.475 +05:30 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-02-05 16:19:32.478 +05:30 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2020-02-05 16:19:32.480 +05:30 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2020-02-05 16:19:32.482 +05:30 [Debug] Using key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} as the default key.
+===> 2020-02-05 16:19:32.482 +05:30 [Debug] Key ring with default key {5262b0a1-0648-4fec-8722-6e1f63d4c4ef} was loaded during application startup.
+===> 2020-02-05 16:19:32.582 +05:30 [Debug] Loaded hosting startup assembly "Bien.WebApp"
+===> 2020-02-05 16:19:32.610 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/  
+===> 2020-02-05 16:19:32.612 +05:30 [Debug] Wildcard detected, all requests with hosts will be allowed.
+===> 2020-02-05 16:19:32.614 +05:30 [Debug] The request path "/" does not match a supported file type
+===> 2020-02-05 16:19:32.619 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Error.cshtml"'.
+===> 2020-02-05 16:19:32.619 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Index.cshtml"'.
+===> 2020-02-05 16:19:32.620 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Privacy.cshtml"'.
+===> 2020-02-05 16:19:32.620 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Shared/_Layout.cshtml"'.
+===> 2020-02-05 16:19:32.620 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/Shared/_ValidationScriptsPartial.cshtml"'.
+===> 2020-02-05 16:19:32.620 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/_ViewImports.cshtml"'.
+===> 2020-02-05 16:19:32.620 +05:30 [Debug] Initializing Razor view compiler with compiled view: '"/Pages/_ViewStart.cshtml"'.
+===> 2020-02-05 16:19:32.630 +05:30 [Debug] 1 candidate(s) found for the request path '"/"'
+===> 2020-02-05 16:19:32.632 +05:30 [Debug] Endpoint '"Page: /Index"' with route pattern '""' is valid for the request path '"/"'
+===> 2020-02-05 16:19:32.660 +05:30 [Debug] Request matched endpoint '"/Index"'
+===> 2020-02-05 16:19:32.662 +05:30 [Debug] The request cannot be served from cache because it contains a 'no-cache' cache directive.
+===> 2020-02-05 16:19:32.677 +05:30 [Information] Executing endpoint '"/Index"'
+===> 2020-02-05 16:19:32.683 +05:30 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+===> 2020-02-05 16:19:32.738 +05:30 [Information] Route matched with "{page = \"/Index\"}". Executing page "/Index"
+===> 2020-02-05 16:19:32.738 +05:30 [Debug] Execution plan of "authorization" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.AutoValidateAntiforgeryTokenAuthorizationFilter"]
+===> 2020-02-05 16:19:32.739 +05:30 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-02-05 16:19:32.739 +05:30 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+===> 2020-02-05 16:19:32.739 +05:30 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-02-05 16:19:32.739 +05:30 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-02-05 16:19:32.741 +05:30 [Debug] Executing page model factory for page "Bien.WebApp.Pages.Pages_Index" ("Bien.WebApp.Views")
+===> 2020-02-05 16:19:32.742 +05:30 [Debug] Executed page model factory for page "Bien.WebApp.Pages.Pages_Index" ("Bien.WebApp.Views")
+===> 2020-02-05 16:19:32.748 +05:30 [Information] Executing handler method "Bien.WebApp.Pages.IndexModel.OnGet" - ModelState is Valid
+===> 2020-02-05 16:19:32.748 +05:30 [Information] Executed handler method "OnGet", returned result "".
+===> 2020-02-05 16:19:32.752 +05:30 [Information] Executing an implicit handler method - ModelState is Valid
+===> 2020-02-05 16:19:32.752 +05:30 [Information] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult".
+===> 2020-02-05 16:19:32.767 +05:30 [Debug] View lookup cache miss for view '"_Layout"' in controller 'null'.
+===> 2020-02-05 16:19:32.804 +05:30 [Debug] Found the endpoints ["Page: /Index"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 16:19:32.812 +05:30 [Debug] Successfully processed template "" for "Page: /Index" resulting in "" and ""
+===> 2020-02-05 16:19:32.813 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Index"] with result "/"
+===> 2020-02-05 16:19:32.814 +05:30 [Debug] Found the endpoints ["Page: /Index"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 16:19:32.814 +05:30 [Debug] Successfully processed template "" for "Page: /Index" resulting in "" and ""
+===> 2020-02-05 16:19:32.814 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Index"] with result "/"
+===> 2020-02-05 16:19:32.815 +05:30 [Debug] Found the endpoints ["Page: /Privacy"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 16:19:32.815 +05:30 [Debug] Successfully processed template "Privacy" for "Page: /Privacy" resulting in "/Privacy" and ""
+===> 2020-02-05 16:19:32.815 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Privacy"] with result "/Privacy"
+===> 2020-02-05 16:19:32.816 +05:30 [Debug] Found the endpoints ["Page: /Privacy"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+===> 2020-02-05 16:19:32.816 +05:30 [Debug] Successfully processed template "Privacy" for "Page: /Privacy" resulting in "/Privacy" and ""
+===> 2020-02-05 16:19:32.816 +05:30 [Debug] Link generation succeeded for endpoints ["Page: /Privacy"] with result "/Privacy"
+===> 2020-02-05 16:19:32.832 +05:30 [Debug] The response will be compressed with '"br"'.
+===> 2020-02-05 16:19:32.850 +05:30 [Debug] Vary by rules were updated. Headers: "ACCEPT-ENCODING", Query keys: null
+===> 2020-02-05 16:19:32.868 +05:30 [Information] Executed page "/Index" in 124.496ms
+===> 2020-02-05 16:19:32.869 +05:30 [Information] Executed endpoint '"/Index"'
+===> 2020-02-05 16:19:32.871 +05:30 [Information] The response could not be cached for this request.
+===> 2020-02-05 16:19:32.875 +05:30 [Information] Request finished in 267.2443ms 200 text/html; charset=utf-8
+===> 2020-02-05 16:19:32.885 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/bootstrap/dist/css/bootstrap.min.css  
+===> 2020-02-05 16:19:32.892 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/css/site.css  
+===> 2020-02-05 16:19:32.892 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/jquery/dist/jquery.min.js  
+===> 2020-02-05 16:19:32.892 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/js/Index.js  
+===> 2020-02-05 16:19:32.895 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib//knockout//knockout-min.js  
+===> 2020-02-05 16:19:32.897 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18  
+===> 2020-02-05 16:19:32.910 +05:30 [Debug] The request path "/js/Index.js" does not match an existing file
+===> 2020-02-05 16:19:32.932 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/js/http/HttpFetchService.js  
+===> 2020-02-05 16:19:32.933 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/lib/bootstrap/dist/js/bootstrap.bundle.min.js  
+===> 2020-02-05 16:19:32.932 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/js/http/HomePageService.js  
+===> 2020-02-05 16:19:32.933 +05:30 [Debug] The request path "/js/http/HttpFetchService.js" does not match an existing file
+===> 2020-02-05 16:19:32.933 +05:30 [Debug] The request path "/js/http/HomePageService.js" does not match an existing file
+===> 2020-02-05 16:19:32.938 +05:30 [Debug] No candidates found for the request path '"/js/Index.js"'
+===> 2020-02-05 16:19:32.938 +05:30 [Debug] No candidates found for the request path '"/js/http/HomePageService.js"'
+===> 2020-02-05 16:19:32.938 +05:30 [Debug] No candidates found for the request path '"/js/http/HttpFetchService.js"'
+===> 2020-02-05 16:19:32.938 +05:30 [Debug] Request did not match any endpoints
+===> 2020-02-05 16:19:32.938 +05:30 [Debug] Request did not match any endpoints
+===> 2020-02-05 16:19:32.938 +05:30 [Debug] Request did not match any endpoints
+===> 2020-02-05 16:19:32.938 +05:30 [Debug] The request cannot be served from cache because it contains a 'no-cache' cache directive.
+===> 2020-02-05 16:19:32.938 +05:30 [Debug] The request cannot be served from cache because it contains a 'no-cache' cache directive.
+===> 2020-02-05 16:19:32.938 +05:30 [Debug] The request cannot be served from cache because it contains a 'no-cache' cache directive.
+===> 2020-02-05 16:19:32.952 +05:30 [Debug] Response is not cacheable because its status code 404 does not indicate success.
+===> 2020-02-05 16:19:32.952 +05:30 [Debug] Response is not cacheable because its status code 404 does not indicate success.
+===> 2020-02-05 16:19:32.952 +05:30 [Debug] Response is not cacheable because its status code 404 does not indicate success.
+===> 2020-02-05 16:19:32.953 +05:30 [Information] The response could not be cached for this request.
+===> 2020-02-05 16:19:32.953 +05:30 [Information] The response could not be cached for this request.
+===> 2020-02-05 16:19:32.954 +05:30 [Information] The response could not be cached for this request.
+===> 2020-02-05 16:19:32.954 +05:30 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\css\site.css"'
+===> 2020-02-05 16:19:32.954 +05:30 [Information] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\js\site.js"'
+===> 2020-02-05 16:19:32.954 +05:30 [Information] Request finished in 58.1175ms 200 application/javascript
+===> 2020-02-05 16:19:32.957 +05:30 [Information] Request finished in 62.6253ms 200 text/css
+===> 2020-02-05 16:19:32.960 +05:30 [Information] Request finished in 28.3176ms 404 
+===> 2020-02-05 16:19:32.960 +05:30 [Information] Request finished in 68.5168ms 404 
+===> 2020-02-05 16:19:32.960 +05:30 [Information] Request finished in 28.4512ms 404 
+===> 2020-02-05 16:19:32.981 +05:30 [Information] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.min.css"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css"'
+===> 2020-02-05 16:19:32.981 +05:30 [Information] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.bundle.min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js"'
+===> 2020-02-05 16:19:32.981 +05:30 [Information] Sending file. Request path: '"/lib/jquery/dist/jquery.min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\jquery\dist\jquery.min.js"'
+===> 2020-02-05 16:19:32.981 +05:30 [Information] Sending file. Request path: '"/lib//knockout//knockout-min.js"'. Physical path: '"D:\Source\Repos\mine-tool\Src\Bien.WebApp\wwwroot\lib\knockout\knockout-min.js"'
+===> 2020-02-05 16:19:32.983 +05:30 [Information] Request finished in 51.1893ms 200 application/javascript
+===> 2020-02-05 16:19:32.983 +05:30 [Information] Request finished in 90.8654ms 200 application/javascript
+===> 2020-02-05 16:19:32.983 +05:30 [Information] Request finished in 97.6992ms 200 text/css
+===> 2020-02-05 16:19:32.983 +05:30 [Information] Request finished in 92.8249ms 200 application/javascript
+===> 2020-02-05 16:19:33.428 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/js/http/HttpFetchService.js  
+===> 2020-02-05 16:19:33.429 +05:30 [Debug] The request path "/js/http/HttpFetchService.js" does not match an existing file
+===> 2020-02-05 16:19:33.431 +05:30 [Debug] No candidates found for the request path '"/js/http/HttpFetchService.js"'
+===> 2020-02-05 16:19:33.431 +05:30 [Debug] Request did not match any endpoints
+===> 2020-02-05 16:19:33.431 +05:30 [Debug] The request cannot be served from cache because it contains a 'no-cache' cache directive.
+===> 2020-02-05 16:19:33.432 +05:30 [Debug] Response is not cacheable because its status code 404 does not indicate success.
+===> 2020-02-05 16:19:33.432 +05:30 [Information] The response could not be cached for this request.
+===> 2020-02-05 16:19:33.433 +05:30 [Information] Request finished in 4.4933ms 404 
+===> 2020-02-05 16:19:33.480 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/js/http/HomePageService.js  
+===> 2020-02-05 16:19:33.480 +05:30 [Debug] The request path "/js/http/HomePageService.js" does not match an existing file
+===> 2020-02-05 16:19:33.480 +05:30 [Debug] No candidates found for the request path '"/js/http/HomePageService.js"'
+===> 2020-02-05 16:19:33.480 +05:30 [Debug] Request did not match any endpoints
+===> 2020-02-05 16:19:33.480 +05:30 [Debug] The request cannot be served from cache because it contains a 'no-cache' cache directive.
+===> 2020-02-05 16:19:33.481 +05:30 [Debug] Response is not cacheable because its status code 404 does not indicate success.
+===> 2020-02-05 16:19:33.481 +05:30 [Information] The response could not be cached for this request.
+===> 2020-02-05 16:19:33.481 +05:30 [Information] Request finished in 1.0471ms 404 
+===> 2020-02-05 16:19:33.485 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44363/js/Index.js  
+===> 2020-02-05 16:19:33.485 +05:30 [Debug] The request path "/js/Index.js" does not match an existing file
+===> 2020-02-05 16:19:33.485 +05:30 [Debug] No candidates found for the request path '"/js/Index.js"'
+===> 2020-02-05 16:19:33.485 +05:30 [Debug] Request did not match any endpoints
+===> 2020-02-05 16:19:33.485 +05:30 [Debug] The request cannot be served from cache because it contains a 'no-cache' cache directive.
+===> 2020-02-05 16:19:33.485 +05:30 [Debug] Response is not cacheable because its status code 404 does not indicate success.
+===> 2020-02-05 16:19:33.485 +05:30 [Information] The response could not be cached for this request.
+===> 2020-02-05 16:19:33.486 +05:30 [Information] Request finished in 0.8633ms 404 

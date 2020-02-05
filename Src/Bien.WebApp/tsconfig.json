@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "es5",
+    "lib": [ "es5", "es2017", "dom" ]
+  },
+  "typeRoots": [ "wwwroot/typings" ],
+  "exclude": [
+    "node_modules",
+    "wwwroot/typings/**/*",
+    "**/*.d.ts",
+    "wwwroot/typings/knockout/knockout.d.ts"
+  ],
+  "include": [
+    "wwwroot/js/**/*"
+  ],
+  "compileOnSave": true,
+  "sourceMap": true
+}

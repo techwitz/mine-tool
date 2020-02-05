@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
+using Bien.DataAcess.SqlServer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -53,6 +54,10 @@ namespace Bien.WebApp
             });
 
             var connectionString = Configuration.GetConnectionString("DefaultConnection");
+            services.Configure<SqlStoreOptions>(config =>
+            {
+                config.ConnectionString = connectionString;
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

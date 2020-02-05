@@ -4,7 +4,103 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="row">
+    <!-- Column -->
+    <div class="col-lg-12 col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title"> Ventilation Monitor</h5>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    <div id="dvValitilationCapacity" class="glossary-cat-list">
+                        <div class="table-responsive marginB15 border overflow-visible">
+                            <table id="tblVentilation"
+                                   class="table table-bordered  toggle-arrow mb-0 toggle-arrow-tiny"
+                                   data-filtering="true" data-paging="true" data-sorting="true">
+                                <thead>
+                                    <tr>
+                                        <th>Unit</th>
+                                        <span data-bind="foreach: departments">
+                                            <th data-bind="text: name"></th>
+                                        </span>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input class="form-control" id="unit" data-val="true" placeholder="Unit" data-val-length-max="100" maxlength="100" type="text" value="">
+                                        </td>
+                                        @foreach (var departments in Model.Departments)
+                                        {
+                                            <td>
+                                                <input class="form-control" type="number" step="1" min="1" value="1" data-val="true" placeholder="Unit" data-val-length-max="100" maxlength="100">
+                                            </td>
+                                        }
+                                        <td style="width:40px">
+                                            <button id="removeRow" class="btn btn-warning text-uppercase waves-effect waves-light" onclick="RemoveRow(this)" type="button"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td><input type="text" id="txtName" /></td>
+                                        <td><input type="text" id="txtCountry" /></td>
+                                        <td><input type="button" id="btnAdd" value="Add" /></td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <button id="addRow" class="btn btn-success text-uppercase waves-effect waves-light" bind-data="click:AddRow" type="button"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </p>
+            </div>
+            <div class="card-footer">
+            </div>
+        </div>
+    </div>
+    <!-- Column -->
 </div>
+@section Scripts
+{
+    <script src="~/lib//knockout//knockout-min.js"></script>
+    <script src="~/js/http/HttpFetchService.js"></script>
+    <script src="~/js/http/HomePageService.js"></script>
+    <script src="~/js/Index.js"></script>
+
+    <script>
+                            //objJsonArr = [];
+
+                            //// Need to correct this function
+                            //function AddRow(this) {
+                            //    if ($('#TicketMaterial :selected').val() != "" && $('#TicketMaterialBillCategory :selected').val() != "" && $('#quantity').val() != "") {
+                            //        var ObjNew = {
+                            //            "materialId": $('#TicketMaterial :selected').val(),
+                            //            "materialName": $('#TicketMaterial :selected').text(),
+                            //            "materialCategoryId": $('#TicketMaterialBillCategory :selected').val(),
+                            //            "materialCategoryName": $('#TicketMaterialBillCategory :selected').text(),
+                            //            "materialQty": $('#quantity').val()
+                            //        };
+                            //        objJsonArr.push(ObjNew);
+
+                            //        // Need to clone above row and prepend
+                            //        $('#tblVentilation tbody').prepend(
+                            //            '<tr>' +
+                            //            '<td class="name-text">' + $('#TicketMaterial :selected').text() + '</td>' +
+                            //            '<td class="discription-text">' + $('#TicketMaterialBillCategory :selected').text() + '</td>' +
+                            //            '<td class="name-text">' + $('#quantity').val() + '</td>' +
+                            //            '</tr>'
+                            //        )
+                            //        $('#tblVentilation .footable-empty').remove();
+
+                            //        // finally set value on hidden variable
+                            //        $('#hdnVentilation').val(JSON.stringify(objJsonArr));
+                            //    }
+                            //}
+
+                            //function RemoveRow(this) {
+
+                            //}
+    </script>
+}
