@@ -32,12 +32,10 @@
                                         <td>
                                             <input class="form-control" id="unit" data-val="true" placeholder="Unit" data-val-length-max="100" maxlength="100" type="text" value="">
                                         </td>
-                                        @foreach (var departments in Model.Departments)
-                                        {
-                                            <td>
-                                                <input class="form-control" type="number" step="1" min="1" value="1" data-val="true" placeholder="Unit" data-val-length-max="100" maxlength="100">
-                                            </td>
-                                        }
+
+                                        <td>
+                                            <input class="form-control" type="number" step="1" min="1" value="1" data-val="true" placeholder="Unit" data-val-length-max="100" maxlength="100">
+                                        </td>
                                         <td style="width:40px">
                                             <button id="removeRow" class="btn btn-warning text-uppercase waves-effect waves-light" onclick="RemoveRow(this)" type="button"><i class="fa fa-trash" aria-hidden="true"></i></button>
                                         </td>
@@ -70,37 +68,37 @@
     <script src="~/js/Index.js"></script>
 
     <script>
-                            //objJsonArr = [];
+                                //objJsonArr = [];
 
-                            //// Need to correct this function
-                            //function AddRow(this) {
-                            //    if ($('#TicketMaterial :selected').val() != "" && $('#TicketMaterialBillCategory :selected').val() != "" && $('#quantity').val() != "") {
-                            //        var ObjNew = {
-                            //            "materialId": $('#TicketMaterial :selected').val(),
-                            //            "materialName": $('#TicketMaterial :selected').text(),
-                            //            "materialCategoryId": $('#TicketMaterialBillCategory :selected').val(),
-                            //            "materialCategoryName": $('#TicketMaterialBillCategory :selected').text(),
-                            //            "materialQty": $('#quantity').val()
-                            //        };
-                            //        objJsonArr.push(ObjNew);
+                                //// Need to correct this function
+                                //function AddRow(this) {
+                                //    if ($('#TicketMaterial :selected').val() != "" && $('#TicketMaterialBillCategory :selected').val() != "" && $('#quantity').val() != "") {
+                                //        var ObjNew = {
+                                //            "materialId": $('#TicketMaterial :selected').val(),
+                                //            "materialName": $('#TicketMaterial :selected').text(),
+                                //            "materialCategoryId": $('#TicketMaterialBillCategory :selected').val(),
+                                //            "materialCategoryName": $('#TicketMaterialBillCategory :selected').text(),
+                                //            "materialQty": $('#quantity').val()
+                                //        };
+                                //        objJsonArr.push(ObjNew);
 
-                            //        // Need to clone above row and prepend
-                            //        $('#tblVentilation tbody').prepend(
-                            //            '<tr>' +
-                            //            '<td class="name-text">' + $('#TicketMaterial :selected').text() + '</td>' +
-                            //            '<td class="discription-text">' + $('#TicketMaterialBillCategory :selected').text() + '</td>' +
-                            //            '<td class="name-text">' + $('#quantity').val() + '</td>' +
-                            //            '</tr>'
-                            //        )
-                            //        $('#tblVentilation .footable-empty').remove();
+                                //        // Need to clone above row and prepend
+                                //        $('#tblVentilation tbody').prepend(
+                                //            '<tr>' +
+                                //            '<td class="name-text">' + $('#TicketMaterial :selected').text() + '</td>' +
+                                //            '<td class="discription-text">' + $('#TicketMaterialBillCategory :selected').text() + '</td>' +
+                                //            '<td class="name-text">' + $('#quantity').val() + '</td>' +
+                                //            '</tr>'
+                                //        )
+                                //        $('#tblVentilation .footable-empty').remove();
 
-                            //        // finally set value on hidden variable
-                            //        $('#hdnVentilation').val(JSON.stringify(objJsonArr));
-                            //    }
-                            //}
+                                //        // finally set value on hidden variable
+                                //        $('#hdnVentilation').val(JSON.stringify(objJsonArr));
+                                //    }
+                                //}
 
-                            //function RemoveRow(this) {
+                                //function RemoveRow(this) {
 
-                            //}
+                                //}
     </script>
 }

@@ -6,53 +6,24 @@
             this.name = name;
         }
 
-        public delay(ms: number) {
-            return new Promise<void>(function (resolve) {
-                setTimeout(resolve, ms);
-            });
-        }
-
-        public Post<U>(url: string, payload: any): Promise<U> {
-            const promise = new Promise<U>((resolve, reject) => {
-                fetch(url,
-                    {
-                        method: 'post',
-                        body: JSON.stringify(payload)
-                    }).then((response) => {
-                        return response.json();
-                    })
-                    .then(function (result: U) {
-                        resolve(result);
-                    });
-            });
-
-            return promise;
-        }
-
-        public Get<U>(url: string, payload: any): Promise<U> {
+        public Get<U>(url: string, payload: any): any {
             var query = "?";
             if (payload && payload.keys) {
                 for (let [key, value] of payload) {
                     query = query + `${key} = ${value}&`;
                 }
             }
-            //let response = await fetch(url + query);
-            // let result = response.json(); // download as Blob object
 
-            // return result;
-
-            const promise = new Promise<U>((resolve, reject) => {
-                fetch(url,
-                    {
-                        method: 'get',
-                    }).then((response) => {
-                        return response.json();
-                    })
-                    .then(function (result: U) {
-                        resolve(result);
-                    });
-            });
-
+            var promise = $.Deferred<U[]>();
+            fetch(url,
+                {
+                    method: 'get',
+                }).then((response) => {
+                    return response.json();
+                })
+                .then(function (result: U[]) {
+                    promise.resolve(result);
+                });
             return promise;
         }
 

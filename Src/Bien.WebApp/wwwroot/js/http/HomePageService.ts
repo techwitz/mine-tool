@@ -11,7 +11,7 @@ module bien {
             var self = this;
 
             var promise = $.Deferred<Department[]>();
-            self.Get<[]>("/index?handler=fetchDepartments", null).then(result => {
+            self.Get<[]>("/api/Department", null).then(result => {
                 var items = [];
                 if (result) {
                     result.forEach(d => {

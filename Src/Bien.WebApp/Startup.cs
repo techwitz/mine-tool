@@ -1,15 +1,20 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text.Json;
 using System.Threading.Tasks;
+using Bien.Core.Services;
 using Bien.DataAcess.SqlServer;
+using Bien.DataAcess.Stores;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -18,9 +23,13 @@ namespace Bien.WebApp
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        private const int DevelopmentSslPort = 8080;
+        private readonly IWebHostEnvironment _env;
+
+        public Startup(IConfiguration configuration, IWebHostEnvironment env)
         {
             Configuration = configuration;
+            _env = env;
         }
 
         public IConfiguration Configuration { get; }
@@ -28,7 +37,29 @@ namespace Bien.WebApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSingleton<IActionContextAccessor, ActionContextAccessor>()
+                .AddScoped(x => x.GetRequiredService<IUrlHelperFactory>()
+                .GetUrlHelper(x.GetRequiredService<IActionContextAccessor>().ActionContext));
+
             services.AddRazorPages();
+            services.AddControllers().SetCompatibilityVersion(CompatibilityVersion.Latest)
+            .AddJsonOptions(options =>
+            {
+                options.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
+                options.JsonSerializerOptions.IgnoreReadOnlyProperties = false;
+                options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
+                options.JsonSerializerOptions.IgnoreNullValues = true;
+                options.JsonSerializerOptions.WriteIndented = false;
+            });
+
+            services.AddMvc(options =>
+            {
+                if (_env.IsDevelopment())
+                {
+                    options.SslPort = DevelopmentSslPort;
+                }
+                // options.Filters.Add(new RequireHttpsAttribute());
+            });
 
             // caching response for middlewares
             services.AddResponseCaching(options =>
@@ -53,11 +84,16 @@ namespace Bien.WebApp
                 options.JsonSerializerOptions.WriteIndented = false;
             });
 
+            services.AddMvc().SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Latest);
+
             var connectionString = Configuration.GetConnectionString("DefaultConnection");
             services.Configure<SqlStoreOptions>(config =>
             {
                 config.ConnectionString = connectionString;
             });
+
+            // configure business dependencies
+            ConfigureDependencies(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -79,9 +115,10 @@ namespace Bien.WebApp
             {
                 ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto,
                 ForwardLimit = 2,
-                // KnownProxies.Add(IPAddress.Parse("127.0.10.1"))
                 // ForwardedForHeaderName = "X-Forwarded-For-My-Custom-Header-Name"
             };
+
+            proxy.KnownProxies.Add(IPAddress.Parse("127.0.10.1"));
 
             app.UseForwardedHeaders(proxy);
 
@@ -113,6 +150,17 @@ namespace Bien.WebApp
             {
                 endpoints.MapRazorPages();
             });
+        }
+
+        public void ConfigureDependencies(IServiceCollection services)
+        {
+            // add the SQL Server DbFactory so that each repository
+            // will use a SqlConnection for data access
+            services.AddSqlDbFactory(Configuration, "App");
+
+            // service dependencies
+            // configure business dependencies
+            services.AddScoped<IDepartmentStore, DbDepartmentStore>();
         }
     }
 }
