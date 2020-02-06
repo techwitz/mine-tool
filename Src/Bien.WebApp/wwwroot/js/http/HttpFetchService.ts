@@ -12,29 +12,12 @@
                 url: url,
                 method: "POST",
                 data: JSON.stringify(payload),
-                contentType: "application/json",
-                dataType: "json"
+                contentType: "application/json; charset=utf-8"
             });
-            request.done(function (data) {
-                console.info(data);
-            }).then((response) => {
-                return response.json();
-            })
-                .then(function (result: U) {
-                    promise.resolve(result);
-                });
-            //fetch(url,
-            //    {
-            //        method: 'post',
-            //        body: JSON.stringify(payload),
-            //        // data: data,
-            //        //dataType: "json",
-            //    }).then((response) => {
-            //        return response.json();
-            //    })
-            //    .then(function (result: U) {
-            //        promise.resolve(result);
-            //    });
+            request.done((response) => {
+                promise.resolve(response);
+            });
+
             return promise;
         }
 

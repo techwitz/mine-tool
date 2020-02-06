@@ -12,7 +12,7 @@ module bien {
             var self = this;
 
             var promise = $.Deferred<any>();
-            self.Post<VentilationCapacity[]>("/api/Department", data).then(result => {
+            self.Post<any>("/api/Department", data).then(result => {
                 promise.resolve(result);
                 return result;
             });
