@@ -1,5 +1,6 @@
 /// <reference path="HttpFetchService.ts" /> #
 /// <reference path="../../typings/jquery/jquery.d.ts" /> #
+/// <reference path="../Index.ts" /> #
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -20,6 +21,15 @@ var bien;
         function HomePageService() {
             return _super.call(this, "Home Page") || this;
         }
+        HomePageService.prototype.saveData = function (data) {
+            var self = this;
+            var promise = $.Deferred();
+            self.Post("/api/Department", data).then(function (result) {
+                promise.resolve(result);
+                return result;
+            });
+            return promise;
+        };
         HomePageService.prototype.pullDepartments = function () {
             var self = this;
             var promise = $.Deferred();

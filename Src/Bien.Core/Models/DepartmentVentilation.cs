@@ -8,15 +8,12 @@ namespace Bien.Core.Models
     public class DepartmentVentilation : EntityBase
     {
         [Required, StringLength(500)]
-        public string Unit { get; set; }
+        public string UnitName { get; set; }
 
-        public ICollection<VentilationInfo> Ventilations { get; set; } = new List<VentilationInfo>();
-    }
+        public int DepartmentUid { get; set; }
 
-    public class VentilationInfo
-    {
-        public int DepartmentId { get; set; }
+        public string Departmentkey { get; set; }
 
-        public int VentilationCapacity { get; set; }
+        public string Capacity { get; set; }
     }
 }

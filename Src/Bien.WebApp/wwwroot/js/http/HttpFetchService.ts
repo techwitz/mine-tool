@@ -6,6 +6,38 @@
             this.name = name;
         }
 
+        public Post<U>(url: string, payload: any): any {
+            var promise = $.Deferred<U>();
+            var request = $.ajax({
+                url: url,
+                method: "POST",
+                data: JSON.stringify(payload),
+                contentType: "application/json",
+                dataType: "json"
+            });
+            request.done(function (data) {
+                console.info(data);
+            }).then((response) => {
+                return response.json();
+            })
+                .then(function (result: U) {
+                    promise.resolve(result);
+                });
+            //fetch(url,
+            //    {
+            //        method: 'post',
+            //        body: JSON.stringify(payload),
+            //        // data: data,
+            //        //dataType: "json",
+            //    }).then((response) => {
+            //        return response.json();
+            //    })
+            //    .then(function (result: U) {
+            //        promise.resolve(result);
+            //    });
+            return promise;
+        }
+
         public Get<U>(url: string, payload: any): any {
             var query = "?";
             if (payload && payload.keys) {

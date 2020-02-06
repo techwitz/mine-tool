@@ -1,10 +1,23 @@
 ﻿/// <reference path="HttpFetchService.ts" /> #
 /// <reference path="../../typings/jquery/jquery.d.ts" /> #
+/// <reference path="../Index.ts" /> #
 
 module bien {
     export class HomePageService extends HttpFetchService<Index> {
         constructor() {
             super("Home Page");
+        }
+
+        public saveData(data) {
+            var self = this;
+
+            var promise = $.Deferred<any>();
+            self.Post<VentilationCapacity[]>("/api/Department", data).then(result => {
+                promise.resolve(result);
+                return result;
+            });
+
+            return promise;
         }
 
         public pullDepartments() {

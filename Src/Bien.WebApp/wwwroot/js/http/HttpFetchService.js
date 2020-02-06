@@ -5,6 +5,37 @@ var bien;
         function HttpFetchService(name) {
             this.name = name;
         }
+        HttpFetchService.prototype.Post = function (url, payload) {
+            var promise = $.Deferred();
+            var request = $.ajax({
+                url: url,
+                method: "POST",
+                data: JSON.stringify(payload),
+                contentType: "application/json",
+                dataType: "json"
+            });
+            request.done(function (data) {
+                console.info(data);
+            }).then(function (response) {
+                return response.json();
+            })
+                .then(function (result) {
+                promise.resolve(result);
+            });
+            //fetch(url,
+            //    {
+            //        method: 'post',
+            //        body: JSON.stringify(payload),
+            //        // data: data,
+            //        //dataType: "json",
+            //    }).then((response) => {
+            //        return response.json();
+            //    })
+            //    .then(function (result: U) {
+            //        promise.resolve(result);
+            //    });
+            return promise;
+        };
         HttpFetchService.prototype.Get = function (url, payload) {
             var query = "?";
             if (payload && payload.keys) {

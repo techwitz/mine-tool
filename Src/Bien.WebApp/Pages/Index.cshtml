@@ -36,7 +36,7 @@
                                     <tr data-bind="foreach: $data.departmentCapacity">
                                         <!-- ko {if: $index() === 0} -->
                                         <td>
-                                            <input class="form-control" id="unit" data-val="true" placeholder="Unit" data-val-length-max="100" maxlength="100" type="text" value="">
+                                            <input class="form-control" data-bind="textInput: $parent.unit" id="unit" data-val="true" placeholder="Unit" data-val-length-max="100" maxlength="100" type="text" value="">
                                         </td>
                                         <!-- /ko -->
                                         <!-- ko {if: $index() >= 0} -->
@@ -69,6 +69,7 @@
                                 </tfoot>
                             </table>
                             <button id="addRow" class="btn btn-success text-uppercase waves-effect waves-light" data-bind="click:AddRow" type="button"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                            <button id="addRow" class="btn btn-primary text-uppercase waves-effect waves-light" data-bind="click:saveRecords" type="button"><i class="fa fa-save" aria-hidden="true"></i>&nbsp;Save</button>
                         </div>
                     </div>
                 </p>

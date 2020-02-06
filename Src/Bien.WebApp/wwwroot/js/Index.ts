@@ -10,9 +10,11 @@ module bien {
         constructor() {
         }
 
+        private isModelValid: boolean = true;
         public departments: KnockoutObservableArray<Department> = ko.observableArray([]);
         public ventilationCapacity: KnockoutObservableArray<VentilationCapacity> = ko.observableArray([]);
         public columnsTotal: KnockoutComputed<any[]> = ko.pureComputed(() => {
+            var self = this;
             var columns_total: TotalInfo[] = []
             this.ventilationCapacity().forEach(row => {
                 var idx = 0;
@@ -22,6 +24,8 @@ module bien {
                     item.total(item.total() + parseInt(<any>column.capacity()));
                     columns_total[idx] = item;
                     idx = idx + 1;
+
+                    if (!item.isValid() && self.isModelValid) self.isModelValid = false;
                 });
             });
             console.log(columns_total);
@@ -40,6 +44,28 @@ module bien {
         public removeRow(row) {
             console.info(row);
             this.ventilationCapacity.remove(row);
+        }
+
+        public saveRecords() {
+            var self = this;
+            var models = [];
+            if (self.isModelValid) {
+                this.ventilationCapacity().forEach(row => {
+                    row.departmentCapacity().forEach(column => {
+                        var model = { UnitName: row.unit(), EntityKey: row.key, Departmentkey: column.departmentKey(), Capacity: column.capacity() };
+                        model.EntityKey = Math.random().toString(20).substring(2);
+                        models.push(model);
+                    });
+                });
+
+                var httpService = new HomePageService();
+                httpService.saveData(models).always(result => {
+                    alert(result);
+                });
+            }
+            else {
+                alert('Please correct the error before saving!');
+            }
         }
     }
 
@@ -63,6 +89,13 @@ module bien {
             }
         }, this);
 
+        public isValid: KnockoutComputed<boolean> = ko.pureComputed({
+            owner: this,
+            read: () => {
+                return this.total() < this.VentilationCapacity ? true : false;
+            }
+        }, this);
+
         public VentilationCapacity: number = 0;
         public total: KnockoutObservable<number> = ko.observable(0);
     }
@@ -75,11 +108,11 @@ module bien {
 
     export class VentilationCapacity {
         constructor() {
-            this.key = Math.random().toString(36).substring(16);
+            this.key = Math.random().toString(20).substring(2);
         }
 
         public unit: KnockoutObservable<string> = ko.observable("");
-        public key: string = Math.random().toString(36).substring(16);
+        public key: string = Math.random().toString(20).substring(2);
         /*public key: KnockoutComputed<string> = ko.pureComputed(() => {
             return Math.random().toString(36).substring(16);
         }, this);*/

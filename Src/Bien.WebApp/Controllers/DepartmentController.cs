@@ -33,5 +33,21 @@ namespace Bien.WebApp.Controllers
             var departments = await _departmentStore.GetAllAsync().ConfigureAwait(false);
             return departments;
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Post([FromBody]IList<DepartmentVentilation> data)
+        {
+            var msg = "Saved successfuly!";
+            if (data?.Any() == true)
+            {
+                foreach (var model in data)
+                {
+                    var result = await _departmentStore.InsertRecord(model);
+                    if (!result.Succeeded) msg = "One or more records failed to save.";
+                }
+            }
+
+            return Ok(msg);
+        }
     }
 }
